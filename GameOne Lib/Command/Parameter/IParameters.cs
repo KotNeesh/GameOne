@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SimpleTeam.Comm
+namespace SimpleTeam.Command
 {
     public interface IParameters
     {

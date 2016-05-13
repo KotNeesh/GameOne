@@ -1,7 +1,7 @@
-﻿using SimpleTeam.Mess;
-using SimpleTeam.Comm;
+﻿using SimpleTeam.Message;
+using SimpleTeam.Command;
 
-namespace SimpleTeam.GameOneID.Comm
+namespace SimpleTeam.GameOneID.Command
 {
     /**
     <summary>

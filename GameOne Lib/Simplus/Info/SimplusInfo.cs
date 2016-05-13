@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class SimplusInfo : ISimplusInfoClient, ISimplusInfoServer
     {
+        private ContainerLink _links;
         private IObj2D _obj2D;
         private SimplusHP _hp;
         private SimplusParty _party;
@@ -16,10 +17,11 @@ namespace SimpleTeam.Sce
             _obj2D = new Circle(Vector2.zero, 50);
             _hp = new SimplusHP();
             _party = new SimplusParty();
+            _links = new ContainerLink();
         }
         void ISimplusInfoServer.IncHP(int HP, SimplusInfo source)
         {
-            if (!_party.IsMyID(source.Party))
+            if (!_party.IsMy(source.Party))
             {
                 bool isСaptured = _hp.Attack(HP);
                 if (isСaptured)
@@ -32,7 +34,7 @@ namespace SimpleTeam.Sce
         }
         void ISimplusInfoClient.IncHP(int HP, SimplusInfo source)
         {
-            if (!_party.IsMyID(source.Party))
+            if (!_party.IsMy(source.Party))
                 HP *= -1;
             _hp.Inc(HP);
         }

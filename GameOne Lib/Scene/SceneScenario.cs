@@ -1,13 +1,13 @@
-﻿using SimpleTeam.Comm.Scenar;
+﻿using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class SceneScenario : ISceneScenario
     {
         protected IScenario _scenario;
         public SceneScenario()
         {
-            _scenario = new Scenario();
+            _scenario = new ScenarioQueue();
         }
         public IScenario GetScenario()
         {

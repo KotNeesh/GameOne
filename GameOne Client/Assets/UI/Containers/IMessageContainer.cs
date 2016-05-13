@@ -1,5 +1,5 @@
 ﻿
-namespace SimpleTeam.Mess
+namespace SimpleTeam.Message
 {
     public interface IMessageContainer
     {

@@ -1,31 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using SimpleTeam.Net;
-using SimpleTeam.Mess;
+using System.Reflection;
 
-namespace SimpleTeam.GameOneID.Serial
+namespace SimpleTeam.GameOneID.BinarySerialization
 {
-    
     using TypeID = Byte;
     /**
     <summary> 
-    Реестр всех упаковщиков сообщений.
+    Реестр всех распаковщиков пакетов.
     </summary>
     */
-    public class RegisterPacker
+    public class RegisterUnpacker
     {
+        private Dictionary<TypeID, IUnpackerID> _dictionary;
 
-        private Dictionary<TypeID, IPackerMy> _dictionary;
-        public RegisterPacker()
+        public RegisterUnpacker()
         {
             _dictionary = GetDictionary();
         }
-        private Dictionary<TypeID, IPackerMy> GetDictionary()
+        private Dictionary<TypeID, IUnpackerID> GetDictionary()
         {
-            var assemblyType = typeof(RegisterPacker);
+            var assemblyType = typeof(Assembly);
 
-            var packers = new Dictionary<TypeID, IPackerMy>();
+            var packers = new Dictionary<TypeID, IUnpackerID>();
             foreach (var type in assemblyType.Assembly.GetTypes())
             {
                 if (!type.IsClass)
@@ -35,17 +32,17 @@ namespace SimpleTeam.GameOneID.Serial
                     continue;
 
 
-                if (typeof(IPackerMy).IsAssignableFrom(type))
+                if (typeof(IUnpackerID).IsAssignableFrom(type))
                 {
-                    IPackerMy p = Activator.CreateInstance(type) as IPackerMy;
+                    IUnpackerID p = Activator.CreateInstance(type) as IUnpackerID;
                     packers.Add(p.Type, p);
                 }
-                    
+
             }
 
             return packers;
         }
-        public IPackerMy  Find(TypeID type)
+        public IUnpackerID Find(TypeID type)
         {
             if (_dictionary.ContainsKey(type))
                 return _dictionary[type];

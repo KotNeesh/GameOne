@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     class GameManager : MonoBehaviour
     {

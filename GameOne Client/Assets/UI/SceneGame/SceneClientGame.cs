@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
-using SimpleTeam.Comm;
-using SimpleTeam.Mess;
+using SimpleTeam.Command;
+using SimpleTeam.Message;
 using System;
-using SimpleTeam.Comm.Scenar;
-using SimpleTeam.GameOneID.Mess;
+using SimpleTeam.Command.Scenario;
+using SimpleTeam.GameOneID.Message;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class SceneClientGame : MonoBehaviour, ISceneGameMessages
     {

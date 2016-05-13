@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class Point : IObj2D
     {

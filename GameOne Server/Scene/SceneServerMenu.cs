@@ -1,11 +1,11 @@
 ﻿using System;
-using SimpleTeam.Comm;
-using SimpleTeam.Use;
+using SimpleTeam.Command;
+using SimpleTeam.User;
 using SimpleTeam.Data;
-using SimpleTeam.GameOneID.Mess;
-using SimpleTeam.Comm.Scenar;
+using SimpleTeam.GameOneID.Message;
+using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     /**
     <summary> 
@@ -47,7 +47,7 @@ namespace SimpleTeam.Sce
         {
             MessageAccount m;
             bool success = false;
-            User user = message.Users[0] as User;
+            UserClient user = message.Users[0] as UserClient;
             if (message.State == MessageAccount.StateType.SignUp)
             {
                 success = _data.SignUp(message.Email, message.Password, message.Nick);

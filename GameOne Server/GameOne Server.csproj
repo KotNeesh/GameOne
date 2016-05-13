@@ -75,9 +75,9 @@
     <Compile Include="Scene\SceneServerMenu.cs" />
     <Compile Include="System\ConsoleCtrl.cs" />
     <Compile Include="Network\NetworkServerMachine.cs" />
-    <Compile Include="Program\Program.cs" />
+    <Compile Include="Main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Program\Server.cs" />
+    <Compile Include="Main\Server.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace SimpleTeam.Use
+namespace SimpleTeam.User
 {
     /**
     <summary> 

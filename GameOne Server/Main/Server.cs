@@ -1,12 +1,12 @@
 ﻿using System.Threading;
-using SimpleTeam.Mess;
-using SimpleTeam.Net;
-using SimpleTeam.Sys;
-using SimpleTeam.Sce;
-using SimpleTeam.Comm.Scenar;
-using SimpleTeam.Mess.Man;
+using SimpleTeam.Message;
+using SimpleTeam.Network;
+using SimpleTeam.SystemBase;
+using SimpleTeam.Scene;
+using SimpleTeam.Command.Scenario;
+using SimpleTeam.Message.Manager;
 
-namespace SimpleTeam
+namespace SimpleTeam.Main
 {
     /**
     <summary> 

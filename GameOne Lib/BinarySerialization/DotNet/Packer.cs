@@ -1,11 +1,11 @@
 ﻿using System.IO;
 using System;
 using System.Runtime.Serialization;
-using SimpleTeam.Mess;
+using SimpleTeam.Message;
 using System.Runtime.Serialization.Formatters.Binary;
-using SimpleTeam.Net;
+using SimpleTeam.Network;
 
-namespace SimpleTeam.Serial.DotNet
+namespace SimpleTeam.BinarySerialization.DotNet
 {
     public class Packer:IPacker
     {

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using SimpleTeam.Mess;
-using SimpleTeam.GameOneID.Mess;
+using SimpleTeam.Message;
+using SimpleTeam.GameOneID.Message;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class ButtonSign : MonoBehaviour
     {

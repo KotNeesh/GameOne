@@ -1,11 +1,11 @@
 ﻿
 
 using System;
-using SimpleTeam.Comm;
-using SimpleTeam.GameOneID.Mess;
-using SimpleTeam.Comm.Scenar;
+using SimpleTeam.Command;
+using SimpleTeam.GameOneID.Message;
+using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     class SceneServerGame : ISceneGameMessages
     {

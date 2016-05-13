@@ -1,17 +1,17 @@
 ﻿using System.Collections.Generic;
 
 
-namespace SimpleTeam.Comm.Scenar
+namespace SimpleTeam.Command.Scenario
 {
     /**
     <summary>
     Сценарий отвечает за хранение и очередь исполнения команд.
     </summary>
     */
-    public class Scenario : IScenario
+    public class ScenarioQueue : IScenario
     {
         private Queue<ICommand> _commands;
-        public Scenario()
+        public ScenarioQueue()
         {
             _commands = new Queue<ICommand>();
         }

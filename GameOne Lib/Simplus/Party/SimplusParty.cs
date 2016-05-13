@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class SimplusParty
     {
         public uint ID { get; set; }
-        public bool IsMyID(SimplusParty party)
+        public bool IsMy(SimplusParty party)
         {
             return ID == party.ID;
         }

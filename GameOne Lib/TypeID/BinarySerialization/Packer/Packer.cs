@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SimpleTeam.Serial;
+using SimpleTeam.BinarySerialization;
 using System.IO;
-using SimpleTeam.Net;
-using SimpleTeam.Mess;
+using SimpleTeam.Network;
+using SimpleTeam.Message;
 
-namespace SimpleTeam.GameOneID.Serial
+namespace SimpleTeam.GameOneID.BinarySerialization
 {
     using SizePacket = UInt16;
     public class Packer: IPacker
@@ -28,7 +28,8 @@ namespace SimpleTeam.GameOneID.Serial
                 {
                     writer.Write(size);
                     writer.Write(message.Type);
-                    IPackerMy packer = _register.Find(message.Type);
+                    IPackerID packer = _register.Find(message.Type);
+                    if (packer == null) return;
                     packer.CreatePacket(writer, message);
                     size = (SizePacket)(stream.Length - sizeof(SizePacket));
                     stream.Position = 0;

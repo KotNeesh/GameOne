@@ -1,5 +1,5 @@
 ﻿
-namespace SimpleTeam.Comm
+namespace SimpleTeam.Command
 {
     /**
     <summary>

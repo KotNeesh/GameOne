@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 
-namespace SimpleTeam.GameOneID.Comm
+namespace SimpleTeam.GameOneID.Command
 {
     using TypeID = Byte;
     /**

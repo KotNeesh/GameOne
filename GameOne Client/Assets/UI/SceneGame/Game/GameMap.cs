@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class GameMap : MonoBehaviour
     {

@@ -1,9 +1,9 @@
-﻿using SimpleTeam.Sce;
-using SimpleTeam.Mess;
+﻿using SimpleTeam.Scene;
+using SimpleTeam.Message;
 using System.Collections.Generic;
-using SimpleTeam.Mess.Man;
+using SimpleTeam.Message.Manager;
 
-namespace SimpleTeam.Comm.Scenar
+namespace SimpleTeam.Command.Scenario
 {
 
     /**

@@ -1,12 +1,12 @@
 ﻿using System;
-using SimpleTeam.Mess;
+using SimpleTeam.Message;
 using System.IO;
-using SimpleTeam.GameOneID.Mess;
+using SimpleTeam.GameOneID.Message;
 
-namespace SimpleTeam.GameOneID.Serial
+namespace SimpleTeam.GameOneID.BinarySerialization
 {
     using TypeID = Byte;
-    public class PackerAccount : IPackerMy
+    public class PackerAccount : IPackerID
     {
         TypeID ITypeID.Type
         {

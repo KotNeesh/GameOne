@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SimpleTeam.Net
+namespace SimpleTeam.Network
 {
     using SizePacket = UInt16;
     /**

@@ -1,6 +1,6 @@
-﻿using SimpleTeam.Comm.Scenar;
+﻿using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Mess.Man
+namespace SimpleTeam.Message.Manager
 {
     /**
     <summary> 

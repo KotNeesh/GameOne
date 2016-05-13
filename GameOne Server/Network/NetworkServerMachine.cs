@@ -2,14 +2,14 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Collections.Generic;
-using SimpleTeam.Mess;
-using SimpleTeam.Mess.Man;
-using SimpleTeam.Sys;
-using SimpleTeam.Use;
-using SimpleTeam.Serial;
-using SimpleTeam.Serial.DotNet;
+using SimpleTeam.Message;
+using SimpleTeam.Message.Manager;
+using SimpleTeam.SystemBase;
+using SimpleTeam.User;
+using SimpleTeam.BinarySerialization;
+using SimpleTeam.BinarySerialization.DotNet;
 
-namespace SimpleTeam.Net
+namespace SimpleTeam.Network
 {
     /**
     <summary> 
@@ -23,6 +23,8 @@ namespace SimpleTeam.Net
         private TcpListener _listener;
         private List<IUserNetwork> _clients;
         private IMessagesManagerNetwork _messagesManager;
+
+        private NetworkUserProtocol _network = new NetworkUserProtocol();
 
         private IUnpacker _unpacker = new Unpacker();
         private IPacker _packer = new Packer();
@@ -59,7 +61,7 @@ namespace SimpleTeam.Net
         {
             while (_listener.Pending())
             {
-                IUserNetwork cl = new User(_listener.AcceptTcpClient());
+                IUserNetwork cl = new UserClient(_listener.AcceptTcpClient());
                 cl.Socket.SendBufferSize = 1024;
                 cl.Socket.ReceiveBufferSize = 1024;
                 _clients.Add(cl);
@@ -92,7 +94,7 @@ namespace SimpleTeam.Net
 
             foreach (IUserNetwork user in _clients)
             {
-                Network.Send(user);
+                _network.Send(user);
             }
             
         }
@@ -103,17 +105,17 @@ namespace SimpleTeam.Net
             {
                 while (true)
                 {
-                    Network.Receive(user);
+                    _network.Receive(user);
                     IMessage m = null;
                     Packet p = user.PacketReceive;
-                    PacketState s = _unpacker.CreateMessage(ref m, p);
-                    if (s == PacketState.Ok)
+                    UnpackerState s = _unpacker.CreateMessage(ref m, p);
+                    if (s == UnpackerState.Ok)
                     {
                         ((MessageBase)m).Users.Add(user);
                         _messagesManager.SetMessage(m);
                         user.PacketReceive.Clear();
                     }
-                    else if (s == PacketState.NotReady) break;
+                    else if (s == UnpackerState.NotReady) break;
                     else
                     {
                         throw new System.SystemException("hoho");

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using SimpleTeam.Use;
+using SimpleTeam.User;
 using System;
 
-namespace SimpleTeam.Mess
+namespace SimpleTeam.Message
 {
     /**
     <summary>

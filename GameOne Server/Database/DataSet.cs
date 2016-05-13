@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Data;
-using SimpleTeam.Use;
+using SimpleTeam.User;
 
 namespace SimpleTeam.Data
 {

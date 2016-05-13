@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using SimpleTeam.Comm;
-using SimpleTeam.GameOneID.Comm;
-using SimpleTeam.Comm.Scenar;
+using SimpleTeam.Command;
+using SimpleTeam.GameOneID.Command;
+using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Mess.Man
+namespace SimpleTeam.Message.Manager
 {
     /**
     <summary> 
@@ -16,14 +16,14 @@ namespace SimpleTeam.Mess.Man
     */
     public class MessagesManager : IMessagesManagerNetwork, IMessagesManagerScenario
     {
-        private Scenario _scenario;
+        private IScenario _scenario;
         private Queue<IMessage> _messagesNetwork;
 
         private RegisterCommandProcessMessage _registerComm = new RegisterCommandProcessMessage();
 
         public MessagesManager()
         {
-            _scenario = new Scenario();
+            _scenario = new ScenarioQueue();
             _messagesNetwork = new Queue<IMessage>();
         }
 

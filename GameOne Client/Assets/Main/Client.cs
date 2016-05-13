@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
-using SimpleTeam.Mess;
-using SimpleTeam.Net;
-using SimpleTeam.Comm;
-using SimpleTeam.Sce;
-using SimpleTeam.Mess.Man;
-using SimpleTeam.Comm.Scenar;
+using SimpleTeam.Message;
+using SimpleTeam.Network;
+using SimpleTeam.Command;
+using SimpleTeam.Scene;
+using SimpleTeam.Message.Manager;
+using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam
+namespace SimpleTeam.Main
 {
     public class Client : MonoBehaviour
     {

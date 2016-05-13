@@ -1,10 +1,10 @@
 ﻿using System;
-using SimpleTeam.Mess;
-using SimpleTeam.Net;
+using SimpleTeam.Message;
+using SimpleTeam.Network;
 
-namespace SimpleTeam.Serial
+namespace SimpleTeam.BinarySerialization
 {
-    public enum PacketState : Byte
+    public enum UnpackerState : Byte
     {
         Ok = 0,
         NotReady = 1,
@@ -14,6 +14,6 @@ namespace SimpleTeam.Serial
     }
     public interface IUnpacker
     {
-        PacketState CreateMessage(ref IMessage message, Packet packet);
+        UnpackerState CreateMessage(ref IMessage message, Packet packet);
     }
 }

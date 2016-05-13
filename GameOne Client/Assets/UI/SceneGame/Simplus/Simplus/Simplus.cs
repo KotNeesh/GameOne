@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class Simplus : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class WindowMenu : MonoBehaviour
     {

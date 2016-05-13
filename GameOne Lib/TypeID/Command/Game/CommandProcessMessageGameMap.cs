@@ -1,10 +1,10 @@
 ﻿using System;
-using SimpleTeam.Comm;
-using SimpleTeam.Mess;
-using SimpleTeam.GameOneID.Mess;
-using SimpleTeam.Comm.Scenar;
+using SimpleTeam.Command;
+using SimpleTeam.Message;
+using SimpleTeam.GameOneID.Message;
+using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.GameOneID.Comm
+namespace SimpleTeam.GameOneID.Command
 {
     using TypeID = Byte;
     /**

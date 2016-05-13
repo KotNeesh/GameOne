@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace SimpleTeam.Sys
+namespace SimpleTeam.SystemBase
 {
     [global::System.AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
     public sealed class BitfieldLengthAttribute : Attribute
@@ -22,7 +22,7 @@ namespace SimpleTeam.Sys
         {
             long r = 0;
             int offset = 0;
-
+            
             // For every field suitably attributed with a BitfieldLength
             foreach (System.Reflection.FieldInfo f in t.GetType().GetFields())
             {

@@ -2,11 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using SimpleTeam.Mess;
+using SimpleTeam.Message;
 using System.Runtime.Serialization.Formatters.Binary;
-using SimpleTeam.Net;
+using SimpleTeam.Network;
+using SimpleTeam.User;
 
-namespace SimpleTeam.Serial.DotNet
+namespace SimpleTeam.BinarySerialization.DotNet
 {
 
 
@@ -19,9 +20,9 @@ namespace SimpleTeam.Serial.DotNet
         }
 
 
-        public PacketState CreateMessage(ref IMessage message, Packet packet)
+        public UnpackerState CreateMessage(ref IMessage message, Packet packet)
         {
-            if (!packet.IsReady) return PacketState.NotReady;
+            if (!packet.IsReady) return UnpackerState.NotReady;
             message = null;
             using (MemoryStream stream = new MemoryStream(packet.GetData()))
             {
@@ -32,11 +33,11 @@ namespace SimpleTeam.Serial.DotNet
                 catch (Exception ex)
                 {
                     message = null;
-                    return PacketState.NotParse;
+                    return UnpackerState.NotParse;
                 }
             }
-            ((MessageBase)message).Users = new List<Use.IUserNetwork>();
-            return PacketState.Ok;
+            ((MessageBase)message).Users = new List<IUserNetwork>();
+            return UnpackerState.Ok;
             
         }
     }

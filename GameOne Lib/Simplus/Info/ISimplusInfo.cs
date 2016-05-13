@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     interface ISimplusInfo
     {

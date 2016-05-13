@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Net.Sockets;
-using SimpleTeam.Net;
+using SimpleTeam.Network;
 
-namespace SimpleTeam.Use
+namespace SimpleTeam.User
 {
     public interface IUserNetwork
     {

@@ -1,8 +1,8 @@
 ﻿using System;
-using SimpleTeam.Mess;
-using SimpleTeam.Net;
+using SimpleTeam.Message;
+using SimpleTeam.Network;
 
-namespace SimpleTeam.Serial
+namespace SimpleTeam.BinarySerialization
 {
     public interface IPacker
     {

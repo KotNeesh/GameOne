@@ -1,12 +1,12 @@
 ﻿using System;
-using SimpleTeam.Mess;
+using SimpleTeam.Message;
 
 using System.IO;
 
-namespace SimpleTeam.GameOneID.Serial
+namespace SimpleTeam.GameOneID.BinarySerialization
 {
     using SizePacket = UInt16;
-    public interface IPackerMy : ITypeID
+    public interface IPackerID : ITypeID
     {
         void CreatePacket(BinaryWriter writer, IMessage message);
     }

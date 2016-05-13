@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
-using SimpleTeam.Sys;
+using SimpleTeam.SystemBase;
 
-namespace SimpleTeam.Comm.Scenar
+namespace SimpleTeam.Command.Scenario
 {
 
     /**

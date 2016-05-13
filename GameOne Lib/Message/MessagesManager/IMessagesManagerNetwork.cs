@@ -1,4 +1,4 @@
-﻿namespace SimpleTeam.Mess.Man
+﻿namespace SimpleTeam.Message.Manager
 {
     /**
     <summary> 

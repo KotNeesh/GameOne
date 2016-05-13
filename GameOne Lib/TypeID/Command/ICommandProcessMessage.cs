@@ -1,7 +1,7 @@
-﻿using SimpleTeam.Comm;
-using SimpleTeam.Mess;
+﻿using SimpleTeam.Command;
+using SimpleTeam.Message;
 
-namespace SimpleTeam.GameOneID.Comm
+namespace SimpleTeam.GameOneID.Command
 {
     public interface ICommandProcessMessage : ITypeID
     {

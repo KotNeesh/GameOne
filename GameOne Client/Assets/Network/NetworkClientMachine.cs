@@ -2,14 +2,14 @@
 using System.Threading;
 using System.Net;
 using System.Net.Sockets;
-using SimpleTeam.Sys;
-using SimpleTeam.Use;
-using SimpleTeam.Mess;
-using SimpleTeam.Mess.Man;
-using SimpleTeam.Serial;
-using SimpleTeam.Serial.DotNet;
+using SimpleTeam.SystemBase;
+using SimpleTeam.User;
+using SimpleTeam.Message;
+using SimpleTeam.Message.Manager;
+using SimpleTeam.BinarySerialization;
+using SimpleTeam.BinarySerialization.DotNet;
 
-namespace SimpleTeam.Net
+namespace SimpleTeam.Network
 {
     /**
     <summary> 
@@ -24,6 +24,8 @@ namespace SimpleTeam.Net
         IUserNetwork _server;
         IPAddress _ip;
         private IMessagesManagerNetwork _messagesManager;
+
+        private NetworkUserProtocol _network = new NetworkUserProtocol();
 
         private IUnpacker _unpacker = new Unpacker();
         private IPacker _packer = new Packer();
@@ -88,21 +90,21 @@ namespace SimpleTeam.Net
                 _packer.CreatePacket(ref p, m);
                 _server.PacketsSend.Enqueue(p);
             }
-            Network.Send(_server);
+            _network.Send(_server);
         }
         private void ReceiveAll()
         {
             while (true)
             {
-                Network.Receive(_server);
+                _network.Receive(_server);
                 IMessage m = null;
-                PacketState s =  _unpacker.CreateMessage(ref m, _server.PacketReceive);
-                if (s == PacketState.Ok)
+                UnpackerState s =  _unpacker.CreateMessage(ref m, _server.PacketReceive);
+                if (s == UnpackerState.Ok)
                 {
                     _messagesManager.SetMessage(m);
                     _server.PacketReceive.Clear();
                 }
-                else if (s == PacketState.NotReady) return;
+                else if (s == UnpackerState.NotReady) return;
                 else
                 {
                     throw new System.SystemException("hoho");

@@ -1,11 +1,11 @@
 ﻿using System.IO;
 using System;
 using System.Runtime.Serialization;
-using SimpleTeam.Mess;
-using SimpleTeam.Net;
+using SimpleTeam.Message;
+using SimpleTeam.Network;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace SimpleTeam
+namespace SimpleTeam.Main
 {
     using TypeID = Byte;
 

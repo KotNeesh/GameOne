@@ -1,6 +1,6 @@
-﻿using SimpleTeam.GameOneID.Mess;
+﻿using SimpleTeam.GameOneID.Message;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public interface ISceneGameMessages : ISceneScenario
     {

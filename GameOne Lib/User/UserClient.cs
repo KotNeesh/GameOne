@@ -1,20 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.Net.Sockets;
-using SimpleTeam.Net;
+using SimpleTeam.Network;
 
-namespace SimpleTeam.Use
+namespace SimpleTeam.User
 {
     /**
     <summary> 
     Хранит данные интернета и данные профиля.
     </summary>
     */
-    public class User : IUserNetwork, IUserProfile
+    public class UserClient : IUserNetwork, IUserProfile
     {
         private IUserNetwork _network;
         private IUserProfile _profile;
 
-        public User(TcpClient client = null)
+        public UserClient(TcpClient client = null)
         {
             _network = new UserNetwork(client);
             _profile = new UserProfile();

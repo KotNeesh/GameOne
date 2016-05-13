@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SimpleTeam.Serial;
+using SimpleTeam.BinarySerialization;
 using System.IO;
-using SimpleTeam.Net;
-using SimpleTeam.Mess;
+using SimpleTeam.Network;
+using SimpleTeam.Message;
 
 
-namespace SimpleTeam.GameOneID.Serial
+namespace SimpleTeam.GameOneID.BinarySerialization
 {
     using TypeID = Byte;
     public class Unpacker: IUnpacker
@@ -18,18 +18,19 @@ namespace SimpleTeam.GameOneID.Serial
         {
             _register = new RegisterUnpacker();
         }
-        public PacketState CreateMessage(ref IMessage message, Packet packet)
+        public UnpackerState CreateMessage(ref IMessage message, Packet packet)
         {
             message = null;
-            if (!packet.IsReady) return PacketState.NotReady;
-            if (packet.Size < sizeof(TypeID)) return PacketState.SizeOut;
+            if (!packet.IsReady) return UnpackerState.NotReady;
+            if (packet.Size < sizeof(TypeID)) return UnpackerState.SizeOut;
             using (MemoryStream stream = new MemoryStream(packet.GetData()))
             {
                 if (!stream.CanRead) throw new SystemException("haha");
                 using (BinaryReader reader = new BinaryReader(stream))
                 {
                     TypeID type = reader.ReadByte();
-                    IUnpackerMy unpacker = _register.Find(type);
+                    IUnpackerID unpacker = _register.Find(type);
+                    if (unpacker == null) return UnpackerState.NotFoundType;
                     return unpacker.CreateMessage(ref message, reader, packet.Size);
                 }
             }

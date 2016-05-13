@@ -1,8 +1,8 @@
 ﻿using System.Net.Sockets;
 using System;
-using SimpleTeam.Use;
+using SimpleTeam.User;
 
-namespace SimpleTeam.Net
+namespace SimpleTeam.Network
 {
     using SizePacket = UInt16;
     /**
@@ -10,10 +10,10 @@ namespace SimpleTeam.Net
     Обертка на уровне пакетов над TCP протоколом. 
     </summary>
     */
-    public static class Network
+    public class NetworkUserProtocol
     {
-        private static NetworkParser _parser = new NetworkParser();
-        public static void Send(IUserNetwork user)
+        private NetworkParser _parser = new NetworkParser();
+        public void Send(IUserNetwork user)
         {
             if (!user.Socket.Connected) return;
 
@@ -24,7 +24,7 @@ namespace SimpleTeam.Net
                 _parser.SendPacket(packet, stream);
             }
         }
-        public static void Receive(IUserNetwork user)
+        public void Receive(IUserNetwork user)
         {
             if (!user.Socket.Connected) return;
 

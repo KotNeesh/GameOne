@@ -1,6 +1,6 @@
-﻿using SimpleTeam.Comm.Scenar;
+﻿using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public interface ISceneScenario
     {

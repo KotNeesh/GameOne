@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace SimpleTeam.Mess
+namespace SimpleTeam.Message
 {
     using TypeID = Byte;
     /**

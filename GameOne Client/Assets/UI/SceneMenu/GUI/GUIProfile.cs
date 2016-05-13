@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using SimpleTeam.Mess;
-using SimpleTeam.Use;
-using SimpleTeam.GameOneID.Mess;
+using SimpleTeam.Message;
+using SimpleTeam.User;
+using SimpleTeam.GameOneID.Message;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class GUIProfile : MonoBehaviour
     {

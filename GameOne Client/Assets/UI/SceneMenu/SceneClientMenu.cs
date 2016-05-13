@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
-using SimpleTeam.Comm;
-using SimpleTeam.Mess;
-using SimpleTeam.GameOneID.Mess;
-using SimpleTeam.Comm.Scenar;
+using SimpleTeam.Command;
+using SimpleTeam.Message;
+using SimpleTeam.GameOneID.Message;
+using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Sce
+namespace SimpleTeam.Scene
 {
     public class SceneClientMenu : MonoBehaviour, ISceneMenuMessages
     {
