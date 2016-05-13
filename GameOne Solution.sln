@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOne Client", "GameOne Client\GameOne Client.csproj", "{A851BAD0-9C1C-F1A1-8879-23C0E10A8A73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOne Lib", "GameOne Lib\GameOne Lib.csproj", "{F4E07D41-66B4-45D4-85B1-02C34181967B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOne Server", "GameOne Server\GameOne Server.csproj", "{52AC04A5-09BF-4AF8-8309-FE8E43536DF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A851BAD0-9C1C-F1A1-8879-23C0E10A8A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A851BAD0-9C1C-F1A1-8879-23C0E10A8A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A851BAD0-9C1C-F1A1-8879-23C0E10A8A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A851BAD0-9C1C-F1A1-8879-23C0E10A8A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E07D41-66B4-45D4-85B1-02C34181967B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E07D41-66B4-45D4-85B1-02C34181967B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E07D41-66B4-45D4-85B1-02C34181967B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E07D41-66B4-45D4-85B1-02C34181967B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AC04A5-09BF-4AF8-8309-FE8E43536DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52AC04A5-09BF-4AF8-8309-FE8E43536DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52AC04A5-09BF-4AF8-8309-FE8E43536DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52AC04A5-09BF-4AF8-8309-FE8E43536DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
