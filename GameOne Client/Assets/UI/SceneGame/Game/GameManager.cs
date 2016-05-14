@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using SimpleTeam.GameOneID.Message;
 
 namespace SimpleTeam.Scene
 {
@@ -14,7 +15,6 @@ namespace SimpleTeam.Scene
 
         public void UpdateLink()
         {
-
             Simplus simplus = _map.GetFocusedSimplus(_mouse.Pos);
  
             _linkManager.UpdateDraw(simplus, _mouse);
@@ -47,5 +47,17 @@ namespace SimpleTeam.Scene
             UpdateLink();
         }
 
+        public void SetMap(MessageGameMap message)
+        {
+            
+            //depending on what type of message either call
+            //_map.UpdateMap(message.Info)
+            //or
+            //_map.InitMap(message.Info)
+
+            //fake info
+            InitMapInfo initInfo = new InitMapInfo();
+            _map.SetInitMapInfo(initInfo);
+        }
     }
 }

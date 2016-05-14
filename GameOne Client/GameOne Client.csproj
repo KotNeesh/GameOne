@@ -74,13 +74,16 @@
     <Compile Include="Assets\UI\Containers\IMessageContainer.cs" />
     <Compile Include="Assets\UI\Containers\MessageContainer.cs" />
     <Compile Include="Assets\UI\SceneGame\Game\GameManager.cs" />
-    <Compile Include="Assets\UI\SceneGame\Game\GameMap.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Map\GameMap.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\DragInfo.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkActionDrawer.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkLogics.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkManager.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\MessageLink.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\MouseManager.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\IMapInfo.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\InitMapInfo.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\UpdateMapInfo.cs" />
     <Compile Include="Assets\UI\SceneGame\SceneClientGame.cs" />
     <Compile Include="Assets\UI\SceneGame\Simplus\Link\SimplusLink.cs" />
     <Compile Include="Assets\UI\SceneGame\Simplus\Link\SimplusLinkActionStater.cs" />

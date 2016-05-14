@@ -53,9 +53,7 @@ namespace SimpleTeam.Scene
             SetSpite(state);
             UpdateSpriteTransform(drag.GetPosSource(), drag.GetPosDestination());
         }
-        
-
-
+    
         public void Visible(bool isVisible)
         {
             _instance.SetActive(isVisible);

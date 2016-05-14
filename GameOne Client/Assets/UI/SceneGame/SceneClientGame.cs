@@ -32,6 +32,7 @@ namespace SimpleTeam.Scene
 
         void ISceneGameMessages.SetMessage(MessageGameMap message)
         {
+            //call GameManager, giving him message which contains MapInfo and MessType
             throw new NotImplementedException();
         }
     }
