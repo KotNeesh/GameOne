@@ -61,10 +61,6 @@ namespace SimpleTeam.Main
             while (true)
             {
                 Thread.Sleep(100);
-                IMessage m = new MessageChat(string.Empty);
-                CommandSendMessageNetwork c = new CommandSendMessageNetwork(m);
-
-                _sceneMenu.GetScenario().Set(c);
             }
         }
     }
