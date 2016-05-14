@@ -29,8 +29,12 @@ namespace SimpleTeam.GameOneID.Command
 
         void ICommand.Do(IAllParameters parameters)
         {
-            IParametersMessagesManager p = parameters as IParametersMessagesManager;
-            p.GetMessagesManager().SetMessage(_message);
+            IParametersMessagesManager p = parameters.GetParameters(Type) as IParametersMessagesManager;
+            if (p != null)
+            {
+                p.GetMessagesManager().SetMessage(_message);
+            }
+            
         }
     }
 }
