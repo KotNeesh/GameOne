@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using SimpleTeam.Message;
-using SimpleTeam.GameOneID.Message;
+using SimpleTeam.GameOne.Message;
 
-namespace SimpleTeam.GameOneID.Scene
+namespace SimpleTeam.GameOne.Scene
 {
     public class GUIAccount : MonoBehaviour
     {

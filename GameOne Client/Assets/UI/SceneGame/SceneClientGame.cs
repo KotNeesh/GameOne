@@ -2,9 +2,9 @@
 using SimpleTeam.Command;
 using System;
 using SimpleTeam.Command.Scenario;
-using SimpleTeam.GameOneID.Message;
+using SimpleTeam.GameOne.Message;
 
-namespace SimpleTeam.GameOneID.Scene
+namespace SimpleTeam.GameOne.Scene
 {
     public class SceneClientGame : MonoBehaviour, ISceneGame
     {

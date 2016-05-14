@@ -2,11 +2,11 @@
 using SimpleTeam.Command;
 using SimpleTeam.User;
 using SimpleTeam.Data;
-using SimpleTeam.GameOneID.Message;
+using SimpleTeam.GameOne.Message;
 using SimpleTeam.Command.Scenario;
-using SimpleTeam.GameOneID.Command;
+using SimpleTeam.GameOne.Command;
 
-namespace SimpleTeam.GameOneID.Scene
+namespace SimpleTeam.GameOne.Scene
 {
     /**
     <summary> 

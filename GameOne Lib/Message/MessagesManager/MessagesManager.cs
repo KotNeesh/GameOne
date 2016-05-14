@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using SimpleTeam.Command;
-using SimpleTeam.GameOneID.Command;
+using SimpleTeam.GameOne.Command;
 using SimpleTeam.Command.Scenario;
 
 namespace SimpleTeam.Message.Manager

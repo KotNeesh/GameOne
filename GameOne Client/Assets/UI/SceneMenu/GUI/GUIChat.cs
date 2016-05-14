@@ -2,10 +2,10 @@
 using UnityEngine.UI;
 using SimpleTeam.Message;
 using SimpleTeam.Command;
-using SimpleTeam.GameOneID.Message;
-using SimpleTeam.GameOneID.Command;
+using SimpleTeam.GameOne.Message;
+using SimpleTeam.GameOne.Command;
 
-namespace SimpleTeam.GameOneID.Scene
+namespace SimpleTeam.GameOne.Scene
 {
     public class GUIChat : MonoBehaviour
     {

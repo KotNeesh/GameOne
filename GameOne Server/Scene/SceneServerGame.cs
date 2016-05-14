@@ -2,10 +2,10 @@
 
 using System;
 using SimpleTeam.Command;
-using SimpleTeam.GameOneID.Message;
+using SimpleTeam.GameOne.Message;
 using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.GameOneID.Scene
+namespace SimpleTeam.GameOne.Scene
 {
     class SceneServerGame : ISceneGame
     {
