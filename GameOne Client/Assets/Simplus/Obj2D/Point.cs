@@ -10,6 +10,7 @@ namespace SimpleTeam.Scene
         {
             _pos = pos;
         }
+
         public Vector2 GetPos()
         {
             return _pos;

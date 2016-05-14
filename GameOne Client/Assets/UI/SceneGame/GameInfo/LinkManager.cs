@@ -16,6 +16,7 @@ namespace SimpleTeam.Scene
             _logics = new LinkLogics();
             //_drawer = new LinkActionDrawer();
         }
+
         public void Update()
         {
             MessageLink m = _logics.GetMessage();
@@ -25,7 +26,6 @@ namespace SimpleTeam.Scene
                 m.Source.CreateLink(m.Destination);
             }
         }
-
 
         public void UpdateDraw(Simplus simplus, MouseManager mouse)
         {

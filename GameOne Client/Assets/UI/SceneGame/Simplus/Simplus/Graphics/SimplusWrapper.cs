@@ -23,8 +23,6 @@ namespace SimpleTeam.Scene
             _animManager = new SimplusAnimationManager(_obj.GetComponent<Animator>());
         }
 
-
-
         public Vector2 GetPos()
         {
             return ((IObj2D)_circle).GetPos();

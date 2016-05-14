@@ -19,6 +19,7 @@ namespace SimpleTeam.Scene
             _party = new SimplusParty();
             _links = new ContainerLink();
         }
+
         void ISimplusInfoServer.IncHP(int HP, SimplusInfo source)
         {
             if (!_party.IsMy(source.Party))
@@ -32,6 +33,7 @@ namespace SimpleTeam.Scene
                 _hp.Defense(HP);
             }
         }
+
         void ISimplusInfoClient.IncHP(int HP, SimplusInfo source)
         {
             if (!_party.IsMy(source.Party))
