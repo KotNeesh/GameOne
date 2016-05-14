@@ -3,13 +3,13 @@ using SimpleTeam.Network;
 using SimpleTeam.SystemBase;
 using SimpleTeam.Command.Scenario;
 using SimpleTeam.Command;
-using SimpleTeam.GameOneID.Command;
+using SimpleTeam.GameOne.Command;
 using SimpleTeam.Message.Manager;
-using SimpleTeam.GameOneID.Scene;
+using SimpleTeam.GameOne.Scene;
 
 
 using SimpleTeam.Message;
-using SimpleTeam.GameOneID.Message;
+using SimpleTeam.GameOne.Message;
 
 namespace SimpleTeam.Main
 {
@@ -33,7 +33,7 @@ namespace SimpleTeam.Main
             _messagesManager = new MessagesManager();
             _network = new NetworkServerMachine(_messagesManager);
             cc = new ConsoleCtrl();
-            IAllParameters p = new AllParametersMy(_sceneMenu, _sceneGame, _messagesManager);
+            IAllParameters p = new AllGameOneParameters(_sceneMenu, _sceneGame, _messagesManager);
             _scenario = new ScenarioMachine(p);
         }
         public void Start()

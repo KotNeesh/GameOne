@@ -66,24 +66,41 @@
     <Reference Include="GameOne">
       <HintPath>Assets\GameOne.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleTeam Lib">
+      <HintPath>Assets\SimpleTeam Lib.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Main\Client.cs" />
     <Compile Include="Assets\Network\NetworkClientMachine.cs" />
+    <Compile Include="Assets\Simplus\ContainerLink\ContainerLink.cs" />
+    <Compile Include="Assets\Simplus\HP\ISimplusHP.cs" />
+    <Compile Include="Assets\Simplus\HP\ISimplusHPClient.cs" />
+    <Compile Include="Assets\Simplus\HP\ISimplusHPServer.cs" />
+    <Compile Include="Assets\Simplus\HP\SimplusHP.cs" />
+    <Compile Include="Assets\Simplus\Info\ISimplusInfo.cs" />
+    <Compile Include="Assets\Simplus\Info\ISimplusInfoClient.cs" />
+    <Compile Include="Assets\Simplus\Info\ISimplusInfoServer.cs" />
+    <Compile Include="Assets\Simplus\Info\SimplusInfo.cs" />
+    <Compile Include="Assets\Simplus\Link\Info\SimplusLinkInfo.cs" />
+    <Compile Include="Assets\Simplus\Obj2D\Circle.cs" />
+    <Compile Include="Assets\Simplus\Obj2D\IObj2D.cs" />
+    <Compile Include="Assets\Simplus\Obj2D\Point.cs" />
+    <Compile Include="Assets\Simplus\Party\SimplusParty.cs" />
     <Compile Include="Assets\UI\Containers\Case.cs" />
     <Compile Include="Assets\UI\Containers\IMessageContainer.cs" />
     <Compile Include="Assets\UI\Containers\MessageContainer.cs" />
     <Compile Include="Assets\UI\SceneGame\Game\GameManager.cs" />
     <Compile Include="Assets\UI\SceneGame\Game\Map\GameMap.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\IMapInfo.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\InitMapInfo.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\UpdateMapInfo.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\DragInfo.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkActionDrawer.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkLogics.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkManager.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\MessageLink.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\MouseManager.cs" />
-    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\IMapInfo.cs" />
-    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\InitMapInfo.cs" />
-    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\UpdateMapInfo.cs" />
     <Compile Include="Assets\UI\SceneGame\SceneClientGame.cs" />
     <Compile Include="Assets\UI\SceneGame\Simplus\Link\SimplusLink.cs" />
     <Compile Include="Assets\UI\SceneGame\Simplus\Link\SimplusLinkActionStater.cs" />
@@ -102,21 +119,6 @@
     <Compile Include="Assets\UI\SceneMenu\Window\GUI\GUISign.cs" />
     <Compile Include="Assets\UI\SceneMenu\Window\GUI\IGUISign.cs" />
     <Compile Include="Assets\UI\SceneMenu\Window\WindowMenu.cs" />
-    <Compile Include="Assets\Simplus\ContainerLink\ContainerLink.cs" />
-    <Compile Include="Assets\Simplus\HP\ISimplusHP.cs" />
-    <Compile Include="Assets\Simplus\HP\ISimplusHPClient.cs" />
-    <Compile Include="Assets\Simplus\HP\ISimplusHPServer.cs" />
-    <Compile Include="Assets\Simplus\HP\SimplusHP.cs" />
-    <Compile Include="Assets\Simplus\Info\ISimplusInfo.cs" />
-    <Compile Include="Assets\Simplus\Info\ISimplusInfoClient.cs" />
-    <Compile Include="Assets\Simplus\Info\ISimplusInfoServer.cs" />
-    <Compile Include="Assets\Simplus\Info\SimplusInfo.cs" />
-    <Compile Include="Assets\Simplus\Link\Info\SimplusLinkInfo.cs" />
-    <Compile Include="Assets\Simplus\Obj2D\Circle.cs" />
-    <Compile Include="Assets\Simplus\Obj2D\IObj2D.cs" />
-    <Compile Include="Assets\Simplus\Obj2D\Point.cs" />
-    <Compile Include="Assets\Simplus\Party\SimplusParty.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

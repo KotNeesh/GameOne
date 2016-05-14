@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
-using SimpleTeam.Message;
 using SimpleTeam.Network;
-using SimpleTeam.GameOneID.Scene;
+using SimpleTeam.GameOne.Scene;
 using SimpleTeam.Message.Manager;
 using SimpleTeam.Command.Scenario;
 using SimpleTeam.Command;
-using SimpleTeam.GameOneID.Command;
+using SimpleTeam.GameOne.Command;
 
 namespace SimpleTeam.Main
 {
@@ -21,7 +20,7 @@ namespace SimpleTeam.Main
         {
             _messagesManager = new MessagesManager();
             _network = new NetworkClientMachine(_messagesManager);
-            IAllParameters p = new AllParametersMy(SceneMenu, SceneGame, _messagesManager);
+            IAllParameters p = new AllGameOneParameters(SceneMenu, SceneGame, _messagesManager);
             _scenario = new ScenarioMachine(p);
             _network.Start();
             _scenario.Start();

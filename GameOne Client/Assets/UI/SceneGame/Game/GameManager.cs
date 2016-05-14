@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
-using SimpleTeam.GameOneID.Message;
+using SimpleTeam.GameOne.Message;
 
-namespace SimpleTeam.GameOneID.Scene
+namespace SimpleTeam.GameOne.Scene
 {
     class GameManager : MonoBehaviour
     {

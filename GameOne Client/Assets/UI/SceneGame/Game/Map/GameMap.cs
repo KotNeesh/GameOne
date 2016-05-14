@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using SimpleTeam.GameOneID.Message;
+using SimpleTeam.GameOne.Message;
 
-namespace SimpleTeam.GameOneID.Scene
+namespace SimpleTeam.GameOne.Scene
 {
     public class GameMap : MonoBehaviour
     {
@@ -73,7 +73,7 @@ namespace SimpleTeam.GameOneID.Scene
             //    //create simplus
             //    var GO = new GameObject("Simplus_" + simpInf.Party.ID.ToString());
             //    //GO
-            //    //set parameters
+            //    //set parameter
             //}
             ////Simplus testSimp = new Simplus();
             

@@ -52,6 +52,9 @@
     <Reference Include="GameOne">
       <HintPath>..\GameOne Lib\bin\Debug\GameOne.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleTeam Lib">
+      <HintPath>..\SimpleTeam Lib\bin\Debug\SimpleTeam Lib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
