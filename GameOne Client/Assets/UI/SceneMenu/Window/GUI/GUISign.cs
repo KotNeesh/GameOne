@@ -4,8 +4,9 @@ using SimpleTeam.Message;
 using SimpleTeam.Command;
 using SimpleTeam.GameOneID.Message;
 using SimpleTeam.Command.Scenario;
+using SimpleTeam.GameOneID.Command;
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
     public class GUISign : MonoBehaviour, IGUISign
     {

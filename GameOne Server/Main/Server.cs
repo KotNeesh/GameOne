@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using SimpleTeam.Network;
 using SimpleTeam.SystemBase;
-using SimpleTeam.GameOneID.Command.Scenario;
+using SimpleTeam.Command.Scenario;
 using SimpleTeam.Command;
 using SimpleTeam.GameOneID.Command;
 using SimpleTeam.Message.Manager;

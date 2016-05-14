@@ -4,7 +4,7 @@ using SimpleTeam.SystemBase;
 using SimpleTeam.Command.Scenario;
 using SimpleTeam.Command;
 
-namespace SimpleTeam.GameOneID.Command.Scenario
+namespace SimpleTeam.Command.Scenario
 {
 
     /**

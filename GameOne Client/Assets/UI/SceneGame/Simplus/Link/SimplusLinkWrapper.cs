@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using System.Collections;
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
     public class SimplusLinkWrapper : MonoBehaviour
     {

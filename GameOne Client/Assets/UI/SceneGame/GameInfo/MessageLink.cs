@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
     public class MessageLink
     { 

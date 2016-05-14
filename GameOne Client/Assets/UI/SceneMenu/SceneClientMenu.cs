@@ -4,9 +4,9 @@ using SimpleTeam.Message;
 using SimpleTeam.GameOneID.Message;
 using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
-    public class SceneClientMenu : MonoBehaviour, ISceneMenuMessages
+    public class SceneClientMenu : MonoBehaviour, ISceneMenu
     {
         public GUIAccount Account;
         public GUISign Sign;

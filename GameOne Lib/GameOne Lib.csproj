@@ -76,7 +76,7 @@
     <Compile Include="GameOne\Command\Menu\CommandProcessMessageProfile.cs" />
     <Compile Include="Command\Scenario\IScenario.cs" />
     <Compile Include="Command\Scenario\ScenarioQueue.cs" />
-    <Compile Include="GameOne\Command\Scenario\ScenarioMachine.cs" />
+    <Compile Include="Command\Scenario\ScenarioMachine.cs" />
     <Compile Include="GameOne\Command\Menu\CommandProcessMessageChat.cs" />
     <Compile Include="GameOne\Command\RegisterCommandProcessMessage.cs" />
     <Compile Include="Message\MessagesManager\IMessagesManagerScenario.cs" />
@@ -119,7 +119,9 @@
     <Compile Include="User\UserNetwork.cs" />
     <Compile Include="User\UserProfile.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GameOne\Command\Scenario\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

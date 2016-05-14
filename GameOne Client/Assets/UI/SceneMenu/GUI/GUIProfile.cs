@@ -6,7 +6,7 @@ using SimpleTeam.Message;
 using SimpleTeam.User;
 using SimpleTeam.GameOneID.Message;
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
     public class GUIProfile : MonoBehaviour
     {

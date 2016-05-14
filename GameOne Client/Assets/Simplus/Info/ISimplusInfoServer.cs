@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
     interface ISimplusInfoServer : ISimplusInfo
     {

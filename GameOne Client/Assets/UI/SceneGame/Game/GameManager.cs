@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using SimpleTeam.GameOneID.Message;
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
     class GameManager : MonoBehaviour
     {

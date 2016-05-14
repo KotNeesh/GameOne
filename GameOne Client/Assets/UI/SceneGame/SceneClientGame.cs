@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using SimpleTeam.Command;
-using SimpleTeam.Message;
 using System;
 using SimpleTeam.Command.Scenario;
 using SimpleTeam.GameOneID.Message;
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
-    public class SceneClientGame : MonoBehaviour, ISceneGameMessages
+    public class SceneClientGame : MonoBehaviour, ISceneGame
     {
         //ISceneScenario
         private SceneScenario _sceneScenario = new SceneScenario();

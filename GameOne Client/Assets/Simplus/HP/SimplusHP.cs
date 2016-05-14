@@ -1,6 +1,6 @@
 ﻿
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
     public class SimplusHP : ISimplusHPServer, ISimplusHPClient
     {
