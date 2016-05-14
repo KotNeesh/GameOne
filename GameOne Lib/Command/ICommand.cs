@@ -1,4 +1,5 @@
 ﻿
+
 namespace SimpleTeam.Command
 {
     /**
@@ -6,9 +7,8 @@ namespace SimpleTeam.Command
     Команда исполняющая сценарную операцию.
     </summary>
     */
-    public interface ICommand
+    public interface ICommand : ITypeID
     {
-
-        void Do(IParameters parameters);
+        void Do(IAllParameters parameters);
     }
 }

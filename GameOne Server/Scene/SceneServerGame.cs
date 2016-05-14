@@ -5,9 +5,9 @@ using SimpleTeam.Command;
 using SimpleTeam.GameOneID.Message;
 using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
-    class SceneServerGame : ISceneGameMessages
+    class SceneServerGame : ISceneGame
     {
         //ISceneScenario
         private SceneScenario _sceneScenario = new SceneScenario();

@@ -4,15 +4,16 @@ using SimpleTeam.User;
 using SimpleTeam.Data;
 using SimpleTeam.GameOneID.Message;
 using SimpleTeam.Command.Scenario;
+using SimpleTeam.GameOneID.Command;
 
-namespace SimpleTeam.Scene
+namespace SimpleTeam.GameOneID.Scene
 {
     /**
     <summary> 
     Обрабатывает события в меню.
     </summary>
     */
-    class SceneServerMenu : ISceneMenuMessages
+    class SceneServerMenu : ISceneMenu
     {
         
         DataSet _data;
