@@ -7,6 +7,10 @@ using SimpleTeam.GameOneID.Command;
 using SimpleTeam.Message.Manager;
 using SimpleTeam.GameOneID.Scene;
 
+
+using SimpleTeam.Message;
+using SimpleTeam.GameOneID.Message;
+
 namespace SimpleTeam.Main
 {
     /**
@@ -56,7 +60,11 @@ namespace SimpleTeam.Main
             _scenario.Start();
             while (true)
             {
-                Thread.Sleep(int.MaxValue);
+                Thread.Sleep(100);
+                IMessage m = new MessageChat(string.Empty);
+                CommandSendMessageNetwork c = new CommandSendMessageNetwork(m);
+
+                _sceneMenu.GetScenario().Set(c);
             }
         }
     }
