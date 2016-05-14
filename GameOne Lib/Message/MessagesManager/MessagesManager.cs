@@ -14,7 +14,7 @@ namespace SimpleTeam.Message.Manager
     для которых находит команду для исполнения сеценарной машиной. 
     </summary>
     */
-    public class MessagesManager : IMessagesManagerNetwork, IMessagesManagerScenario
+    public class MessagesManager : IMessagesManager
     {
         private IScenario _scenario;
         private Queue<IMessage> _messagesNetwork;

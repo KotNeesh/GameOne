@@ -1,8 +1,8 @@
 ﻿using SimpleTeam.Command.Scenario;
 
-namespace SimpleTeam.Command
+namespace SimpleTeam.GameOneID.Scene
 {
-    public interface IParameters : ITypeID
+    public interface ISceneScenario
     {
         IScenario GetScenario();
     }
