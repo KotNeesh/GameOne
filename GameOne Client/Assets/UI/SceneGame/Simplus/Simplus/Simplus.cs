@@ -8,8 +8,11 @@ namespace SimpleTeam.GameOne.Scene
     public class Simplus : MonoBehaviour
     {
         public SimplusWrapper _wrapper;
+
+        //rm
         public GameObject LinkPrefab;
 
+        //rm
         private SimplusLink _link;
 
         private SimplusInfo _info;
@@ -25,7 +28,7 @@ namespace SimpleTeam.GameOne.Scene
         {
             gameObject.transform.position = info.Obj2D.GetPos();
 
-            //info
+            _info.SetInfo(info);
         }
 
         public void CreateLink(Simplus destination)

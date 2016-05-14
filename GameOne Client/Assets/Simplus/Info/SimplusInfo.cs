@@ -20,6 +20,11 @@ namespace SimpleTeam.GameOne.Scene
             _links = new ContainerLink();
         }
 
+        public void SetInfo(SimplusInfo info)
+        {
+
+        }
+
         void ISimplusInfoServer.IncHP(int HP, SimplusInfo source)
         {
             if (!_party.IsMy(source.Party))
