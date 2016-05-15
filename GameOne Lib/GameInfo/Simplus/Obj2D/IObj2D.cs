@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SimpleTeam.GameOne.Scene
+namespace SimpleTeam.GameOne.GameInfo
 {
     public interface IObj2D
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections;
 
-namespace SimpleTeam.GameOne.Scene
+namespace SimpleTeam.GameOne.GameInfo
 {
     interface IMapInfo
     {

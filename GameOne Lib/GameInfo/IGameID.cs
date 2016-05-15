@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-
 namespace SimpleTeam.GameOne.GameInfo
 {
-    interface ISimplusInfoServer : ISimplusInfo
+    using GameID = UInt16;
+    public interface IGameID
     {
-        void IncHP(int HP, SimplusInfo source);
+        GameID ID { get; }
     }
 }

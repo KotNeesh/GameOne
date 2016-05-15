@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SimpleTeam.GameOne.Scene
+namespace SimpleTeam.GameOne.GameInfo
 {
-    public class SimplusLinkInfo
+    using GameID = UInt16;
+    public class SimplusLinkInfo : ISimplusLinkInfo
     {
-        private byte _id;
+        private GameID _id;
 
         private SimplusInfo _source;
         private SimplusInfo _destination;
@@ -27,19 +28,6 @@ namespace SimpleTeam.GameOne.Scene
             set
             {
                 _source = value;
-            }
-        }
-
-        public byte Id
-        {
-            get
-            {
-                return _id;
-            }
-
-            set
-            {
-                _id = value;
             }
         }
 
@@ -92,6 +80,14 @@ namespace SimpleTeam.GameOne.Scene
             set
             {
                 _state = value;
+            }
+        }
+
+        public GameID ID
+        {
+            get
+            {
+                return _id;
             }
         }
     }
