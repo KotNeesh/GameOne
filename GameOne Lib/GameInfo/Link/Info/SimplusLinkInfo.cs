@@ -18,6 +18,7 @@ namespace SimpleTeam.GameOne.GameInfo
 
         private SimplusLinkActionState _state;
 
+
         public SimplusInfo Source
         {
             get

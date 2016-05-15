@@ -7,27 +7,38 @@ namespace SimpleTeam.GameOne.GameInfo
 {
     public class LinkInfoList : ILinkInfoContainer
     {
-        private List<SimplusLinkInfo> _container;
+        private List<ISimplusLinkInfo> _container;
+        private int _maxCount;
+        public LinkInfoList()
+        {
+            _container = new List<ISimplusLinkInfo>();
+            _maxCount = 3;
 
+        }
 
-        public uint CurCount
+        public int CurCount
         {
             get
             {
-                throw new NotImplementedException();
+                return _container.Count;
             }
         }
-        public uint MaxCount
+        public int MaxCount
         {
             get
             {
-                throw new NotImplementedException();
+                return _maxCount;
             }
         }
 
-        public IEnumerator GetEnumerator()
-        {
+        public IEnumerator<ISimplusLinkInfo> GetEnumerator()
+        { 
             return _container.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
         }
     }
 }

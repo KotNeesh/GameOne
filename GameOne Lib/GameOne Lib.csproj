@@ -71,7 +71,7 @@
     <Compile Include="GameInfo\Map\Info\IMapInfo.cs" />
     <Compile Include="GameInfo\Map\Info\InitMapInfo.cs" />
     <Compile Include="GameInfo\Map\Info\UpdateMapInfo.cs" />
-    <Compile Include="GameInfo\Link\SimplusLinkActionState.cs" />
+    <Compile Include="GameInfo\Link\State\SimplusLinkActionState.cs" />
     <Compile Include="GameInfo\Simplus\HP\ISimplusHP.cs" />
     <Compile Include="GameInfo\Simplus\HP\ISimplusHPClient.cs" />
     <Compile Include="GameInfo\Simplus\HP\ISimplusHPServer.cs" />
