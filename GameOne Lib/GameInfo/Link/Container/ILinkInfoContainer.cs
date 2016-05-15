@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    public interface ILinkInfoContainer : IEnumerable
+    public interface ILinkInfoContainer : IEnumerable<ISimplusLinkInfo>
     {
-        uint MaxCount { get; }
-        uint CurCount { get; }
+        int MaxCount { get; }
+        int CurCount { get; }
     }
 }
