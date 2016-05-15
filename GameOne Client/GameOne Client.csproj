@@ -73,28 +73,28 @@
   <ItemGroup>
     <Compile Include="Assets\Main\Client.cs" />
     <Compile Include="Assets\Network\NetworkClientMachine.cs" />
-    <Compile Include="Assets\Simplus\ContainerLink\ContainerLink.cs" />
-    <Compile Include="Assets\Simplus\HP\ISimplusHP.cs" />
-    <Compile Include="Assets\Simplus\HP\ISimplusHPClient.cs" />
-    <Compile Include="Assets\Simplus\HP\ISimplusHPServer.cs" />
-    <Compile Include="Assets\Simplus\HP\SimplusHP.cs" />
-    <Compile Include="Assets\Simplus\Info\ISimplusInfo.cs" />
-    <Compile Include="Assets\Simplus\Info\ISimplusInfoClient.cs" />
-    <Compile Include="Assets\Simplus\Info\ISimplusInfoServer.cs" />
-    <Compile Include="Assets\Simplus\Info\SimplusInfo.cs" />
-    <Compile Include="Assets\Simplus\Link\Info\SimplusLinkInfo.cs" />
-    <Compile Include="Assets\Simplus\Obj2D\Circle.cs" />
-    <Compile Include="Assets\Simplus\Obj2D\IObj2D.cs" />
-    <Compile Include="Assets\Simplus\Obj2D\Point.cs" />
-    <Compile Include="Assets\Simplus\Party\SimplusParty.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\HP\ISimplusHP.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\HP\ISimplusHPClient.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\HP\ISimplusHPServer.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\HP\SimplusHP.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\Info\ISimplusInfo.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\Info\ISimplusInfoClient.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\Info\ISimplusInfoServer.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\Info\SimplusInfo.cs" />
+    <Compile Include="Assets\GameInfo\Link\Container\LinkContainer.cs" />
+    <Compile Include="Assets\GameInfo\Link\Info\SimplusLinkInfo.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\Obj2D\Circle.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\Obj2D\IObj2D.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\Obj2D\Point.cs" />
+    <Compile Include="Assets\GameInfo\Simplus\Party\SimplusParty.cs" />
     <Compile Include="Assets\UI\Containers\Case.cs" />
     <Compile Include="Assets\UI\Containers\IMessageContainer.cs" />
     <Compile Include="Assets\UI\Containers\MessageContainer.cs" />
     <Compile Include="Assets\UI\SceneGame\Game\GameManager.cs" />
     <Compile Include="Assets\UI\SceneGame\Game\Map\GameMap.cs" />
-    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\IMapInfo.cs" />
-    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\InitMapInfo.cs" />
-    <Compile Include="Assets\UI\SceneGame\Game\Map\Info\UpdateMapInfo.cs" />
+    <Compile Include="Assets\GameInfo\Map\Info\IMapInfo.cs" />
+    <Compile Include="Assets\GameInfo\Map\Info\InitMapInfo.cs" />
+    <Compile Include="Assets\GameInfo\Map\Info\UpdateMapInfo.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\DragInfo.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkActionDrawer.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkLogics.cs" />
@@ -119,6 +119,9 @@
     <Compile Include="Assets\UI\SceneMenu\Window\GUI\GUISign.cs" />
     <Compile Include="Assets\UI\SceneMenu\Window\GUI\IGUISign.cs" />
     <Compile Include="Assets\UI\SceneMenu\Window\WindowMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\GameInfo\Simplus\Link\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

@@ -50,6 +50,7 @@ namespace SimpleTeam.GameOne.Scene
             GameObject go = Instantiate(SimplusRedPrefab);
             Simplus simp = go.GetComponent<Simplus>();
             go.name = "Simplus_" + info.Party.ID.ToString();
+
             simp.InitInfo(info);
 
             _simplusContainer.Add(simp);
