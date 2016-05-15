@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections;
 using SimpleTeam.GameOne.Message;
+using SimpleTeam.GameOne.GameInfo;
 
 namespace SimpleTeam.GameOne.Scene
 {
@@ -83,6 +84,16 @@ namespace SimpleTeam.GameOne.Scene
         public void UpdateMap(UpdateMapInfo info)
         {
 
+        }
+
+        public Simplus GetSimplus(int ID)
+        {
+            foreach(Simplus smpl in _simplusContainer)
+            {
+                if (smpl.Info.ID == ID)
+                    return smpl;
+            }
+            return null;
         }
     }
 }
