@@ -90,9 +90,6 @@ namespace SimpleTeam.GameOne.Scene
         {
             //nothing
         }
-
-        
-
         
     }
 }
