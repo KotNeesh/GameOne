@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using SimpleTeam.GameOne.GameInfo;
 
 namespace SimpleTeam.GameOne.Scene
 {
