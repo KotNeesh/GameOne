@@ -33,15 +33,27 @@ namespace SimpleTeam.Main
         {
             if (_isExit)
             {
+                DestroyMachine();
                 Application.Quit();
             }
         }
-
+        private void DestroyMachine()
+        {
+            if (_network != null)
+            {
+                _network.Close();
+                _network = null;
+            }
+            if (_scenario != null)
+            {
+                _scenario.Close();
+                _scenario = null;
+            }
+        }
 
         public void OnDestroy()
         {
-            if (_network != null) _network.Close();
-            if (_scenario != null) _scenario.Close();
+            DestroyMachine();
         }
 
         public void Exit()
