@@ -69,7 +69,7 @@ namespace SimpleTeam.GameOne.Scene
 
         public void SetInitMapInfo(InitMapInfo info)
         {
-            _mapInitInfo = info.SimplusInfo;
+            //_mapInitInfo = info;
             //foreach(SimplusInfo simpInf in info.SimplusInfo)
             //{
             //    //create simplus
