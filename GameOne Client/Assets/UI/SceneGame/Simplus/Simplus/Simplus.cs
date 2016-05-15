@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+using SimpleTeam.GameOne.GameInfo;
 
 namespace SimpleTeam.GameOne.Scene
 {
@@ -13,11 +14,23 @@ namespace SimpleTeam.GameOne.Scene
 
         private ArrayList _links;
 
+        public GameMap _map;
+
+        
+
         //rm
         public GameObject LinkPrefab;
 
         //rm
         private SimplusLink _link;
+
+        public SimplusInfo Info
+        {
+            get
+            {
+                return _info;
+            }
+        }
 
         //public SimplusInfo Info { get; set; }
 
@@ -35,7 +48,7 @@ namespace SimpleTeam.GameOne.Scene
 
         public void SetInfo(SimplusInfo info)
         {
-            foreach (SimplusLinkInfo inf in info.Links.InfoContainer)
+            foreach (SimplusLinkInfo inf in info.Links)
             {
                 //if (inf.Equals(_links)
                 //    continue;
@@ -45,18 +58,24 @@ namespace SimpleTeam.GameOne.Scene
             //if there are not the same
             //update links (create if needed)
             //update info
-            
+
+            SetWrapper(info);
 
             _info.SetInfo(info);
         }
 
+        public void SetWrapper(SimplusInfo info)
+        {
+            
+        }
+
         public void HandleLink(SimplusLinkInfo info)
         {
-            if (null == _links[info.Id])
+            if (null == _links[info.ID])
             {
                 CreateLink(info);
             }
-            if (null != _links[info.Id] && null != info)
+            if (null != _links[info.ID] && null != info)
             {
 
             }
@@ -66,23 +85,20 @@ namespace SimpleTeam.GameOne.Scene
 
         public void UpdateLink(SimplusLinkInfo info)
         {
-            (_links[info.Id] as SimplusLink).Info = info;
+            (_links[info.ID] as SimplusLink).Info = info;
             
         }
 
         public void CreateLink(SimplusLinkInfo info)
         {
-            //?
-            //? somehow get Simplus destination
-            //?
-            var dest = new Simplus();
+            Simplus dest = _map.GetSimplus(info.ID);
             _links.Add(CreateLink(dest));
         }
 
         public void DestroyLink(SimplusLinkInfo info)
         {
-            (_links[info.Id] as SimplusLink).Destroy();
-            _links.RemoveAt(info.Id);
+            (_links[info.ID] as SimplusLink).Destroy();
+            _links.RemoveAt(info.ID);
         }
 
         //rm
