@@ -10,6 +10,7 @@ using SimpleTeam.GameOne.Scene;
 
 using SimpleTeam.Message;
 using SimpleTeam.GameOne.Message;
+using System;
 
 namespace SimpleTeam.Main
 {
@@ -18,22 +19,24 @@ namespace SimpleTeam.Main
     Управление сервером.
     </summary>
     */
-    sealed class Server
+    sealed class Server : IMain
     {
         MessagesManager _messagesManager;
         SceneServerMenu _sceneMenu;
         SceneServerGame _sceneGame;
         NetworkServerMachine _network;
         ScenarioMachine _scenario;
+        private bool _isExit;
         ConsoleCtrl cc;
         public Server()
         {
+            _isExit = false;
             _sceneMenu = new SceneServerMenu();
             _sceneGame = new SceneServerGame();
             _messagesManager = new MessagesManager();
             _network = new NetworkServerMachine(_messagesManager);
             cc = new ConsoleCtrl();
-            IAllParameters p = new AllGameOneParameters(_sceneMenu, _sceneGame, _messagesManager);
+            IAllParameters p = new AllGameOneParameters(this, _sceneMenu, _sceneGame, _messagesManager);
             _scenario = new ScenarioMachine(p);
         }
         public void Start()
@@ -45,15 +48,18 @@ namespace SimpleTeam.Main
         {
             if (consoleEvent == ConsoleCtrl.ConsoleEvent.CtrlClose)
             {
-                _network.Stop();
-                _scenario.Stop();
-                _network.Close();
-                _scenario.Close();
-                _network = null;
+                Close();
                 System.Environment.Exit(-1);
             }
         }
-
+        private void Close()
+        {
+            _network.Stop();
+            _scenario.Stop();
+            _network.Close();
+            _scenario.Close();
+            _network = null;
+        }
         private void Go()
         {
             _network.Start();
@@ -61,7 +67,14 @@ namespace SimpleTeam.Main
             while (true)
             {
                 Thread.Sleep(100);
+                if (_isExit) break;
             }
+            Close();
+        }
+
+        public void Exit()
+        {
+            _isExit = true;
         }
     }
 }

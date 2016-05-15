@@ -47,9 +47,11 @@
     <Compile Include="Command\Parameter\AllParameters.cs" />
     <Compile Include="Command\Parameter\IAllParameters.cs" />
     <Compile Include="Command\Parameter\IParameters.cs" />
+    <Compile Include="Command\Parameter\Main\IParamaterMain.cs" />
     <Compile Include="Command\Scenario\IScenario.cs" />
     <Compile Include="Command\Scenario\ScenarioMachine.cs" />
     <Compile Include="Command\Scenario\ScenarioQueue.cs" />
+    <Compile Include="Main\IMain.cs" />
     <Compile Include="Message\IMessage.cs" />
     <Compile Include="Message\MessageBase.cs" />
     <Compile Include="Network\NetworkParser.cs" />

@@ -52,10 +52,11 @@
     <Compile Include="Command\Menu\CommandProcessMessageAdapterSceneMenu.cs" />
     <Compile Include="Command\Parameter\MessageManager\IParametersMessagesManager.cs" />
     <Compile Include="Command\Parameter\MessageManager\ParametersMessagesManager.cs" />
+    <Compile Include="Command\Parameter\Main\ParameterMain.cs" />
     <Compile Include="Command\Parameter\SceneGame\IParametersSceneGame.cs" />
     <Compile Include="Command\Parameter\SceneGame\ParametersSceneGame.cs" />
     <Compile Include="Command\Parameter\SceneMenu\IParametersSceneMenu.cs" />
-    <Compile Include="Command\Parameter\AllParametersMy.cs" />
+    <Compile Include="Command\Parameter\AllGameOneParameters.cs" />
     <Compile Include="BinarySerialization\Packer\Packer.cs" />
     <Compile Include="BinarySerialization\Unpacker\Unpacker.cs" />
     <Compile Include="Command\Game\CommandProcessMessageGameMap.cs" />

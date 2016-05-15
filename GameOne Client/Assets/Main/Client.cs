@@ -8,19 +8,20 @@ using SimpleTeam.GameOne.Command;
 
 namespace SimpleTeam.Main
 {
-    public class Client : MonoBehaviour
+    public class Client : MonoBehaviour, IMain
     {
         public SceneClientMenu SceneMenu;
         public SceneClientGame SceneGame;
-        MessagesManager _messagesManager;
-        NetworkClientMachine _network;
-        ScenarioMachine _scenario;
-
+        private MessagesManager _messagesManager;
+        private NetworkClientMachine _network;
+        private ScenarioMachine _scenario;
+        private bool _isExit;
         public void Start()
         {
+            _isExit = false;
             _messagesManager = new MessagesManager();
             _network = new NetworkClientMachine(_messagesManager);
-            IAllParameters p = new AllGameOneParameters(SceneMenu, SceneGame, _messagesManager);
+            IAllParameters p = new AllGameOneParameters(this, SceneMenu, SceneGame, _messagesManager);
             _scenario = new ScenarioMachine(p);
             _network.Start();
             _scenario.Start();
@@ -28,13 +29,24 @@ namespace SimpleTeam.Main
         public void OnGUI()
         {
         }
-
+        public void Update()
+        {
+            if (_isExit)
+            {
+                Application.Quit();
+            }
+        }
 
 
         public void OnDestroy()
         {
             if (_network != null) _network.Close();
             if (_scenario != null) _scenario.Close();
+        }
+
+        public void Exit()
+        {
+            _isExit = true;
         }
     }
 }

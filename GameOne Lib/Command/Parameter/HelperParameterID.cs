@@ -14,6 +14,7 @@ namespace SimpleTeam.GameOne.Command
     public enum HelperParameterID : TypeID
     {
         None,
+        Main,
         MessageManager,
         SceneMenu,
         SceneGame

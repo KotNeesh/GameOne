@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using SimpleTeam.GameOne.Message.Manager;
 using SimpleTeam.Command;
 using System;
+using SimpleTeam.Main;
 
 namespace SimpleTeam.GameOne.Command
 {
@@ -14,8 +15,9 @@ namespace SimpleTeam.GameOne.Command
     */
     public class AllGameOneParameters : AllParameters
     {
-        public AllGameOneParameters(ISceneMenu sceneMenu, ISceneGame sceneGame, IMessagesManager messagesManager) : base()
+        public AllGameOneParameters(IMain main, ISceneMenu sceneMenu, ISceneGame sceneGame, IMessagesManager messagesManager) : base()
         {
+            _parameter.Add(new ParameterMain(main));
             _parameter.Add(new ParameterSceneMenu(sceneMenu));
             _parameter.Add(new ParameterSceneGame(sceneGame));
             _parameter.Add(new ParameterMessagesManager(messagesManager));
