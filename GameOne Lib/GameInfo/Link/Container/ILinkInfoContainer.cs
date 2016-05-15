@@ -7,6 +7,5 @@ namespace SimpleTeam.GameOne.GameInfo
     public interface ILinkInfoContainer : IGameObjInfoContainer<ISimplusLinkInfo>
     {
         int MaxCount { get; }
-        int CurCount { get; }
     }
 }

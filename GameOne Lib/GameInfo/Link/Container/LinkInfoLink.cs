@@ -18,13 +18,6 @@ namespace SimpleTeam.GameOne.GameInfo
 
         }
 
-        public int CurCount
-        {
-            get
-            {
-                return _container.Count;
-            }
-        }
         public int MaxCount
         {
             get
@@ -39,23 +32,6 @@ namespace SimpleTeam.GameOne.GameInfo
             {
                 return _container.Count;
             }
-        }
-
-        public ISimplusLinkInfo GetLinkInfo(GameID ID)
-        {
-            foreach (ISimplusLinkInfo l in _container)
-            {
-                if (l.ID == ID)
-                {
-                    return l;
-                }
-            }
-            return null;
-        }
-
-        public IEnumerable<ISimplusLinkInfo> GetEnumerable()
-        {
-            return _container;
         }
 
         public ISimplusLinkInfo GetObj(GameID ID)
