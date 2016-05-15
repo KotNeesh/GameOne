@@ -77,7 +77,7 @@ namespace SimpleTeam.GameOne.Scene
             }
             if (null != _links[info.ID] && null != info)
             {
-
+                DestroyLink(info);
             }
 
             UpdateLink(info);

@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using UnityEngine;
 using SimpleTeam.GameOne.Message;
 using SimpleTeam.GameOne.GameInfo;
+
 
 namespace SimpleTeam.GameOne.Scene
 {
@@ -58,6 +59,10 @@ namespace SimpleTeam.GameOne.Scene
 
             //fake info
             InitMapInfo initInfo = new InitMapInfo();
+            ArrayList simplusInfo = new ArrayList();
+            SimplusInfo info = new SimplusInfo();
+
+            
             _map.SetInitMapInfo(initInfo);
         }
     }
