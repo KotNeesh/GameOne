@@ -4,9 +4,7 @@ using System.Collections;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    public class UpdateMapInfo : IMapInfo
+    public class UpdateMapInfo : MapInfoBase
     {
-        private ArrayList _simplusInfo;
-        public ArrayList SimplusInfo { get { return _simplusInfo; } }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    interface ISimplusHPClient : ISimplusHP
+    public interface ISimplusHPClient : ISimplusHP
     {
         void Inc(int HP);
     }

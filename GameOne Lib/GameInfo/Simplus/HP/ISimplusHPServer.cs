@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    interface ISimplusHPServer : ISimplusHP
+    public interface ISimplusHPServer : ISimplusHP
     {
         bool Attack(int HP);
         void Defense(int HP);
