@@ -6,8 +6,8 @@ using System.Text;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    public interface ISimplusInfoServer : ISimplusInfo
+    public interface ISimplusInfoServer : ISimplusInfoBase
     {
-        void IncHP(int HP, SimplusInfo source);
+        void IncHP(int HP, ISimplusInfo source);
     }
 }

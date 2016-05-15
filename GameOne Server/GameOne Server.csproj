@@ -49,8 +49,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GameOne">
-      <HintPath>..\GameOne Lib\bin\Debug\GameOne.dll</HintPath>
+    <Reference Include="GameOne Lib">
+      <HintPath>..\GameOne Lib\bin\Debug\GameOne Lib.dll</HintPath>
     </Reference>
     <Reference Include="SimpleTeam Lib">
       <HintPath>..\SimpleTeam Lib\bin\Debug\SimpleTeam Lib.dll</HintPath>

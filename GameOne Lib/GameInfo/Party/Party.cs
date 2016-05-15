@@ -5,12 +5,16 @@ using System.Text;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    public class SimplusParty
+    public class Party : IParty
     {
         public uint ID { get; set; }
-        public bool IsMy(SimplusParty party)
+        public bool IsMy(IParty party)
         {
             return ID == party.ID;
+        }
+        public Party(uint id)
+        {
+            ID = id;
         }
     }
 }

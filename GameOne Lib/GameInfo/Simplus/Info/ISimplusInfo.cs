@@ -5,11 +5,7 @@ using System.Text;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    public interface ISimplusInfo : IGameID
+    public interface ISimplusInfo : ISimplusInfoClient, ISimplusInfoServer
     {
-        SimplusParty Party { get; }
-        SimplusHP HP { get; }
-        IObj2D Obj2D { get; }
-        ILinkInfoContainer GetLinks();
     }
 }

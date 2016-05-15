@@ -5,9 +5,7 @@ using System.Text;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    public interface ISimplusHP
+    public interface ISimplusHP : ISimplusHPServer, ISimplusHPClient
     {
-        int Cur { get; }
-        int Max { get; }
     }
 }

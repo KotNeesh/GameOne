@@ -1,5 +1,5 @@
 ﻿using SimpleTeam.Command;
-using SimpleTeam.Message.Manager;
+using SimpleTeam.GameOne.Message.Manager;
 
 namespace SimpleTeam.GameOne.Command
 {

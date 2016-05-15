@@ -1,6 +1,6 @@
 ﻿
 
-namespace SimpleTeam.Message.Manager
+namespace SimpleTeam.GameOne.Message.Manager
 {
     public interface IMessagesManager : IMessagesManagerNetwork, IMessagesManagerScenario
     {

@@ -9,6 +9,7 @@ using SimpleTeam.GameOne.GameInfo;
 
 namespace SimpleTeam.GameOne.Scene
 {
+    using GameID = UInt16;
     class GameManager : MonoBehaviour
     {
         private MouseManager _mouse = new MouseManager();
@@ -58,12 +59,21 @@ namespace SimpleTeam.GameOne.Scene
             //_map.InitMap(message.Info)
 
             //fake info
-            InitMapInfo initInfo = new InitMapInfo();
+            //GJ
+            //InitMapInfo initInfo = new InitMapInfo();
             ArrayList simplusInfo = new ArrayList();
-            SimplusInfo info = new SimplusInfo();
 
-            
-            _map.SetInitMapInfo(initInfo);
+            SimplusInfo info;
+            {
+                GameID id = 124;
+                Circle circle = new Circle(Vector2.zero, 50);
+                ISimplusHP hp = new SimplusHP(30);
+                IParty party = new Party(0);
+                ILinkInfoContainer links = new LinkInfoList();
+                info = new SimplusInfo(id, circle, hp, party, links);
+            }
+            //GJ
+            //_map.SetInitMapInfo(initInfo);
         }
     }
 }

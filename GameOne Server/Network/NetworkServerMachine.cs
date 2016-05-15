@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Collections.Generic;
 using SimpleTeam.Message;
-using SimpleTeam.Message.Manager;
+using SimpleTeam.GameOne.Message.Manager;
 using SimpleTeam.SystemBase;
 using SimpleTeam.User;
 using SimpleTeam.BinarySerialization;

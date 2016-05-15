@@ -4,16 +4,16 @@ using UnityEngine;
 namespace SimpleTeam.GameOne.GameInfo
 {
     using GameID = UInt16;
-    public class SimplusInfo : ISimplusInfoClient, ISimplusInfoServer
+    public class SimplusInfo : ISimplusInfo
     {
         private ILinkInfoContainer _links;
-        private IObj2D _obj2D;
-        private SimplusHP _hp;
-        private SimplusParty _party;
+        private Circle _obj2D;
+        private ISimplusHP _hp;
+        private IParty _party;
         private GameID _id;
-        public SimplusParty Party { get { return _party; } }
-        public SimplusHP HP { get { return _hp; } }
-        public IObj2D Obj2D { get { return _obj2D; } }
+        public IParty Party { get { return _party; } }
+        public ISimplusHP HP { get { return _hp; } }
+        public Circle Obj2D { get { return _obj2D; } }
         public ILinkInfoContainer Links { get { return _links; } }
 
         public GameID ID
@@ -24,24 +24,27 @@ namespace SimpleTeam.GameOne.GameInfo
             }
         }
 
-        public SimplusInfo()
+        public SimplusInfo(GameID id, Circle circle, ISimplusHP hp, IParty party, ILinkInfoContainer links)
         {
-            _obj2D = new Circle(Vector2.zero, 50);
-            _hp = new SimplusHP();
-            _party = new SimplusParty();
-            _links = new LinkInfoList();
+            _id = id;
+            _obj2D = circle;
+            _hp = hp;
+            _party = party;
+            _links = links;
+
         }
 
-        public void SetInfo(SimplusInfo info)
+        public void SetInfo(ISimplusInfo info)
         {
+            _id = info.ID;
             _hp = info.HP;
             _party = info.Party;
             _obj2D = info.Obj2D;
             //? reference
-            _links = info._links;
+            _links = info.Links;
         }
 
-        void ISimplusInfoServer.IncHP(int HP, SimplusInfo source)
+        void ISimplusInfoServer.IncHP(int HP, ISimplusInfo source)
         {
             if (!_party.IsMy(source.Party))
             {
@@ -55,16 +58,11 @@ namespace SimpleTeam.GameOne.GameInfo
             }
         }
 
-        void ISimplusInfoClient.IncHP(int HP, SimplusInfo source)
+        void ISimplusInfoClient.IncHP(int HP, ISimplusInfo source)
         {
             if (!_party.IsMy(source.Party))
                 HP *= -1;
             _hp.Inc(HP);
-        }
-
-        public ILinkInfoContainer GetLinks()
-        {
-            return _links;
         }
     }
 }

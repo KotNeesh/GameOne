@@ -66,8 +66,8 @@ namespace SimpleTeam.GameOne.Scene
             }
             return null;
         }
-
-        public void SetInitMapInfo(InitMapInfo info)
+        //GJ
+        public void SetInitMapInfo()//InitMapInfo info)
         {
             //_mapInitInfo = info;
             //foreach(SimplusInfo simpInf in info.SimplusInfo)
@@ -80,8 +80,8 @@ namespace SimpleTeam.GameOne.Scene
             ////Simplus testSimp = new Simplus();
             
         }
-
-        public void UpdateMap(UpdateMapInfo info)
+        //GJ
+        public void UpdateMap()//UpdateMapInfo info)
         {
 
         }

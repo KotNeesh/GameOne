@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SimpleTeam.GameOne</RootNamespace>
-    <AssemblyName>GameOne</AssemblyName>
+    <AssemblyName>GameOne Lib</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -70,23 +70,24 @@
     <Compile Include="GameInfo\Link\Container\LinkInfoList.cs" />
     <Compile Include="GameInfo\Link\Info\ISimplusLinkInfo.cs" />
     <Compile Include="GameInfo\Link\Info\SimplusLinkInfo.cs" />
-    <Compile Include="GameInfo\Map\Info\IMapInfo.cs" />
-    <Compile Include="GameInfo\Map\Info\InitMapInfo.cs" />
-    <Compile Include="GameInfo\Map\Info\MapInfoBase.cs" />
-    <Compile Include="GameInfo\Map\Info\UpdateMapInfo.cs" />
+    <Compile Include="GameInfo\Map\IMapInfo.cs" />
+    <Compile Include="GameInfo\Map\MapInfo.cs" />
     <Compile Include="GameInfo\Link\State\SimplusLinkActionState.cs" />
     <Compile Include="GameInfo\Simplus\HP\ISimplusHP.cs" />
+    <Compile Include="GameInfo\Simplus\HP\ISimplusHPBase.cs" />
     <Compile Include="GameInfo\Simplus\HP\ISimplusHPClient.cs" />
     <Compile Include="GameInfo\Simplus\HP\ISimplusHPServer.cs" />
     <Compile Include="GameInfo\Simplus\HP\SimplusHP.cs" />
     <Compile Include="GameInfo\Simplus\Info\ISimplusInfo.cs" />
+    <Compile Include="GameInfo\Simplus\Info\ISimplusInfoBase.cs" />
     <Compile Include="GameInfo\Simplus\Info\ISimplusInfoClient.cs" />
     <Compile Include="GameInfo\Simplus\Info\ISimplusInfoServer.cs" />
     <Compile Include="GameInfo\Simplus\Info\SimplusInfo.cs" />
-    <Compile Include="GameInfo\Simplus\Obj2D\Circle.cs" />
-    <Compile Include="GameInfo\Simplus\Obj2D\IObj2D.cs" />
-    <Compile Include="GameInfo\Simplus\Obj2D\Point.cs" />
-    <Compile Include="GameInfo\Simplus\Party\SimplusParty.cs" />
+    <Compile Include="GameInfo\Obj2D\Circle.cs" />
+    <Compile Include="GameInfo\Obj2D\IObj2D.cs" />
+    <Compile Include="GameInfo\Obj2D\Point.cs" />
+    <Compile Include="GameInfo\Party\IParty.cs" />
+    <Compile Include="GameInfo\Party\Party.cs" />
     <Compile Include="Message\Game\MessageGameMap.cs" />
     <Compile Include="Message\Game\MessageGamerCommand.cs" />
     <Compile Include="Message\Game\MessageGameState.cs" />

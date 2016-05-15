@@ -60,14 +60,20 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="GameOne">
-      <HintPath>Assets\GameOne.dll</HintPath>
-    </Reference>
     <Reference Include="SimpleTeam Lib">
       <HintPath>Assets\SimpleTeam Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="GameOne Lib">
+      <HintPath>Assets\GameOne Lib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -76,23 +82,23 @@
     <Compile Include="Assets\UI\Containers\Case.cs" />
     <Compile Include="Assets\UI\Containers\IMessageContainer.cs" />
     <Compile Include="Assets\UI\Containers\MessageContainer.cs" />
-    <Compile Include="Assets\UI\SceneGame\Game\GameManager.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Link\SimplusLink.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Link\SimplusLinkWrapper.cs" />
     <Compile Include="Assets\UI\SceneGame\Game\Map\GameMap.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Simplus\Graphics\ISimplusActionStater.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Simplus\Graphics\SimplusActionStater.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Simplus\Graphics\SimplusAnimationManager.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Simplus\Graphics\SimplusWrapper.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Simplus\Simplus.cs" />
+    <Compile Include="Assets\UI\SceneGame\Game\Simplus\SimplusContainer.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\DragInfo.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkActionDrawer.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkLogics.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\LinkManager.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\MessageLink.cs" />
     <Compile Include="Assets\UI\SceneGame\GameInfo\MouseManager.cs" />
+    <Compile Include="Assets\UI\SceneGame\GameManager.cs" />
     <Compile Include="Assets\UI\SceneGame\SceneClientGame.cs" />
-    <Compile Include="Assets\UI\SceneGame\Simplus\Link\SimplusLink.cs" />
-    <Compile Include="Assets\UI\SceneGame\Simplus\Link\SimplusLinkWrapper.cs" />
-    <Compile Include="Assets\UI\SceneGame\Simplus\Simplus\Graphics\ISimplusActionStater.cs" />
-    <Compile Include="Assets\UI\SceneGame\Simplus\Simplus\Graphics\SimplusActionStater.cs" />
-    <Compile Include="Assets\UI\SceneGame\Simplus\Simplus\Graphics\SimplusAnimationManager.cs" />
-    <Compile Include="Assets\UI\SceneGame\Simplus\Simplus\Graphics\SimplusWrapper.cs" />
-    <Compile Include="Assets\UI\SceneGame\Simplus\Simplus\Simplus.cs" />
-    <Compile Include="Assets\UI\SceneGame\Simplus\Simplus\SimplusContainer.cs" />
     <Compile Include="Assets\UI\SceneMenu\GUI\GUIAccount.cs" />
     <Compile Include="Assets\UI\SceneMenu\GUI\GUIChat.cs" />
     <Compile Include="Assets\UI\SceneMenu\GUI\GUIProfile.cs" />
@@ -101,9 +107,6 @@
     <Compile Include="Assets\UI\SceneMenu\Window\GUI\GUISign.cs" />
     <Compile Include="Assets\UI\SceneMenu\Window\GUI\IGUISign.cs" />
     <Compile Include="Assets\UI\SceneMenu\Window\WindowMenu.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\GameInfo\Simplus\Link\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

@@ -1,6 +1,8 @@
 ﻿using SimpleTeam.Command.Scenario;
+using SimpleTeam.Message;
 
-namespace SimpleTeam.Message.Manager
+
+namespace SimpleTeam.GameOne.Message.Manager
 {
     /**
     <summary> 

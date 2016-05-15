@@ -2,19 +2,19 @@
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    public class SimplusHP : ISimplusHPServer, ISimplusHPClient
+    public class SimplusHP : ISimplusHP
     {
         private int _cur;
-        private int _max = 100;
-        private int _bonusCapture = 10;
+        private int _max;
+        private int _bonusCapture;
         public int Cur { get { return _cur; } }
         public int Max { get { return _max; } }
-        private void Limit()
+
+        public SimplusHP(int cur, int max = 100, int bonusCapture = 10)
         {
-            if (_cur > _max)
-            {
-                _cur = _max;
-            }
+            _cur = cur;
+            _max = max;
+            _bonusCapture = bonusCapture;
         }
         public bool Attack(int HP)
         {
@@ -36,6 +36,13 @@ namespace SimpleTeam.GameOne.GameInfo
         {
             _cur += HP;
             Limit();
+        }
+        private void Limit()
+        {
+            if (_cur > _max)
+            {
+                _cur = _max;
+            }
         }
     }
 }

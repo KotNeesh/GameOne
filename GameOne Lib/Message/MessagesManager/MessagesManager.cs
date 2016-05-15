@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using SimpleTeam.Command;
 using SimpleTeam.GameOne.Command;
 using SimpleTeam.Command.Scenario;
+using SimpleTeam.Message;
 
-namespace SimpleTeam.Message.Manager
+namespace SimpleTeam.GameOne.Message.Manager
 {
     /**
     <summary> 

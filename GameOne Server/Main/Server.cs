@@ -4,7 +4,7 @@ using SimpleTeam.SystemBase;
 using SimpleTeam.Command.Scenario;
 using SimpleTeam.Command;
 using SimpleTeam.GameOne.Command;
-using SimpleTeam.Message.Manager;
+using SimpleTeam.GameOne.Message.Manager;
 using SimpleTeam.GameOne.Scene;
 
 

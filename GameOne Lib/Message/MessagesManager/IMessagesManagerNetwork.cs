@@ -1,4 +1,7 @@
-﻿namespace SimpleTeam.Message.Manager
+﻿using SimpleTeam.Message;
+
+
+namespace SimpleTeam.GameOne.Message.Manager
 {
     /**
     <summary> 
