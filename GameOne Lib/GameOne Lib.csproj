@@ -63,11 +63,11 @@
     <Compile Include="Command\Game\CommandProcessMessageGameState.cs" />
     <Compile Include="Command\Parameter\SceneMenu\ParametersSceneMenu.cs" />
     <Compile Include="Command\Parameter\HelperParameterID.cs" />
-    <Compile Include="GameInfo\GameContainer\GameObjInfoList.cs" />
+    <Compile Include="GameInfo\GameContainer\GameObjList.cs" />
     <Compile Include="GameInfo\IGameID.cs" />
-    <Compile Include="GameInfo\GameContainer\IGameObjInfoContainer.cs" />
+    <Compile Include="GameInfo\GameContainer\IGameObjContainer.cs" />
     <Compile Include="GameInfo\Link\Container\ILinkInfoContainer.cs" />
-    <Compile Include="GameInfo\Link\Container\LinkInfoLink.cs" />
+    <Compile Include="GameInfo\Link\Container\LinkInfoList.cs" />
     <Compile Include="GameInfo\Link\Info\ISimplusLinkInfo.cs" />
     <Compile Include="GameInfo\Link\Info\SimplusLinkInfo.cs" />
     <Compile Include="GameInfo\Map\Info\IMapInfo.cs" />

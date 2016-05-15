@@ -6,7 +6,7 @@ using System.Text;
 namespace SimpleTeam.GameOne.GameInfo
 {
     using GameID = UInt16;
-    public interface IGameObjInfoContainer<T> : IEnumerable<T>
+    public interface IGameObjContainer<T> : IEnumerable<T>
         where T : IGameID
     {
         T GetObj(GameID ID);

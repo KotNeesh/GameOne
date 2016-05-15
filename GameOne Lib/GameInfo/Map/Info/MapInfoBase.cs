@@ -7,12 +7,12 @@ namespace SimpleTeam.GameOne.GameInfo
     using GameID = UInt16;
     public abstract class MapInfoBase : IMapInfo
     {
-        protected IGameObjInfoContainer<ISimplusInfo> _containerSimplus;
+        protected IGameObjContainer<ISimplusInfo> _containerSimplus;
         protected MapInfoBase()
         {
-            _containerSimplus = new GameObjInfoList<ISimplusInfo>();
+            _containerSimplus = new GameObjList<ISimplusInfo>();
         }
-        public IGameObjInfoContainer<ISimplusInfo> GetContainerSimplus()
+        public IGameObjContainer<ISimplusInfo> GetContainerSimplus()
         {
             return _containerSimplus;
         }

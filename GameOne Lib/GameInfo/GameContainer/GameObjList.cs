@@ -6,10 +6,15 @@ using System.Text;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
-    public class GameObjInfoList<T> : IGameObjInfoContainer<T>
+    public class GameObjList<T> : IGameObjContainer<T>
         where T : IGameID
     {
         private List<T> _container;
+
+        public GameObjList()
+        {
+            _container = new List<T>();
+        }
 
         public int Count
         {

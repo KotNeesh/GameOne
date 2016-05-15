@@ -9,13 +9,12 @@ namespace SimpleTeam.GameOne.GameInfo
     public class LinkInfoList : ILinkInfoContainer
     {
 
-        private GameObjInfoList<ISimplusLinkInfo> _container;
+        private GameObjList<ISimplusLinkInfo> _container;
         private int _maxCount;
         public LinkInfoList()
         {
-            _container = new GameObjInfoList<ISimplusLinkInfo>();
+            _container = new GameObjList<ISimplusLinkInfo>();
             _maxCount = 3;
-
         }
 
         public int MaxCount
