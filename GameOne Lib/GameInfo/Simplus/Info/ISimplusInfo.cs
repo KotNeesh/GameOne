@@ -10,6 +10,6 @@ namespace SimpleTeam.GameOne.GameInfo
         SimplusParty Party { get; }
         SimplusHP HP { get; }
         IObj2D Obj2D { get; }
-
+        ILinkInfoContainer GetLinks();
     }
 }

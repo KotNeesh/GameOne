@@ -8,11 +8,12 @@ namespace SimpleTeam.GameOne.GameInfo
     using GameID = UInt16;
     public class LinkInfoList : ILinkInfoContainer
     {
-        private List<ISimplusLinkInfo> _container;
+
+        private GameObjInfoList<ISimplusLinkInfo> _container;
         private int _maxCount;
         public LinkInfoList()
         {
-            _container = new List<ISimplusLinkInfo>();
+            _container = new GameObjInfoList<ISimplusLinkInfo>();
             _maxCount = 3;
 
         }
@@ -31,6 +32,15 @@ namespace SimpleTeam.GameOne.GameInfo
                 return _maxCount;
             }
         }
+
+        public int Count
+        {
+            get
+            {
+                return _container.Count;
+            }
+        }
+
         public ISimplusLinkInfo GetLinkInfo(GameID ID)
         {
             foreach (ISimplusLinkInfo l in _container)
@@ -43,17 +53,29 @@ namespace SimpleTeam.GameOne.GameInfo
             return null;
         }
 
+        public IEnumerable<ISimplusLinkInfo> GetEnumerable()
+        {
+            return _container;
+        }
+
+        public ISimplusLinkInfo GetObj(GameID ID)
+        {
+            return _container.GetObj(ID);
+        }
+
+        public void SetObj(ISimplusLinkInfo gameObj)
+        {
+            _container.SetObj(gameObj);
+        }
+
         public IEnumerator<ISimplusLinkInfo> GetEnumerator()
-        { 
+        {
             return _container.GetEnumerator();
         }
 
-        
-
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return this.GetEnumerator();
+            return _container.GetEnumerator();
         }
-    
     }
 }

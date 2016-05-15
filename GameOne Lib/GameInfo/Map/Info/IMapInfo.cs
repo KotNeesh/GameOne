@@ -6,9 +6,8 @@ using System;
 namespace SimpleTeam.GameOne.GameInfo
 {
     using GameID = UInt16;
-    public interface IMapInfo : IEnumerable<ISimplusInfo>
+    public interface IMapInfo
     {
-        ISimplusInfo GetSimplusInfo(GameID ID);
-        void SetSimplusInfo(ISimplusInfo simplus);
+        IGameObjInfoContainer<ISimplusInfo> GetContainerSimplus();
     }
 }

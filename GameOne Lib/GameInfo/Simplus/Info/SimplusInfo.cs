@@ -61,5 +61,10 @@ namespace SimpleTeam.GameOne.GameInfo
                 HP *= -1;
             _hp.Inc(HP);
         }
+
+        public ILinkInfoContainer GetLinks()
+        {
+            return _links;
+        }
     }
 }
