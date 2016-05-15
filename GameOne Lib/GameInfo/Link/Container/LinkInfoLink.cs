@@ -41,7 +41,10 @@ namespace SimpleTeam.GameOne.GameInfo
 
         public void SetObj(ISimplusLinkInfo gameObj)
         {
-            _container.SetObj(gameObj);
+            if (_container.Count < this.MaxCount)
+            {
+                _container.SetObj(gameObj);
+            }
         }
 
         public IEnumerator<ISimplusLinkInfo> GetEnumerator()
