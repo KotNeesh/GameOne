@@ -5,6 +5,7 @@ using System.Collections;
 
 namespace SimpleTeam.GameOne.GameInfo
 {
+    using GameID = UInt16;
     public class LinkInfoList : ILinkInfoContainer
     {
         private List<ISimplusLinkInfo> _container;
@@ -30,15 +31,29 @@ namespace SimpleTeam.GameOne.GameInfo
                 return _maxCount;
             }
         }
+        public ISimplusLinkInfo GetLinkInfo(GameID ID)
+        {
+            foreach (ISimplusLinkInfo l in _container)
+            {
+                if (l.ID == ID)
+                {
+                    return l;
+                }
+            }
+            return null;
+        }
 
         public IEnumerator<ISimplusLinkInfo> GetEnumerator()
         { 
             return _container.GetEnumerator();
         }
 
+        
+
         IEnumerator IEnumerable.GetEnumerator()
         {
             return this.GetEnumerator();
         }
+    
     }
 }
