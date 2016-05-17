@@ -22,6 +22,132 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Digram\BinarySerialization\BinarySerialization.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\BinarySerialization\BinarySerialization.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\BinarySerialization\BinarySerialization.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\BinarySerialization\DotNet\DotNet.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\BinarySerialization\DotNet\DotNet.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\BinarySerialization\DotNet\DotNet.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\Command\Command.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\Command\Command.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\Command\Command.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\Command\Scenario\Scenario.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\Command\Scenario\Scenario.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\Command\Scenario\Scenario.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\BinarySerialization\BinarySerialization.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\BinarySerialization\BinarySerialization.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\BinarySerialization\BinarySerialization.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\Command\Command.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\Command\Command.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\Command\Command.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\Data\Data.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\Data\Data.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\Data\Data.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\Gameinfo\GameInfo.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\Gameinfo\GameInfo.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\Gameinfo\GameInfo.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\Main\Main.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\Main\Main.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\Main\Main.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\Message\Manager\Manager.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\Message\Manager\Manager.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\Message\Manager\Manager.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\Message\Message.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\Message\Message.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\Message\Message.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\Network\Network.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\Network\Network.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\Network\Network.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\Properties\Properties.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\Properties\Properties.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\Properties\Properties.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\Scene\Scene.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\Scene\Scene.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\Scene\Scene.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\GameOne\SystemBase\SystemBase.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\GameOne\SystemBase\SystemBase.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\GameOne\SystemBase\SystemBase.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\Main\Main.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\Main\Main.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\Main\Main.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\Message\Massage.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\Message\Massage.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\Message\Massage.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\Network\Network.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\Network\Network.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\Network\Network.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Digram\Solution.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -29,12 +155,19 @@
       <SubType>Content</SubType>
       <DependentUpon>Digram\Solution.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Digram\UMLClassDiagram1.classdiagram">
+    <Content Include="Digram\SystemBase\SystemBase.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Digram\UMLClassDiagram1.classdiagram.layout">
+    <Content Include="Digram\SystemBase\SystemBase.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Digram\UMLClassDiagram1.classdiagram</DependentUpon>
+      <DependentUpon>Digram\SystemBase\SystemBase.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Digram\User\User.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Digram\User\User.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Digram\User\User.classdiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Package10_0521.uml">
       <SubType>Content</SubType>
@@ -139,12 +272,11 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include="Digram\BinarySerialization\DotNet\" />
+    <Folder Include="Digram\Command\Scenario" />
     <Folder Include="Digram\GameOne" />
     <Folder Include="Digram\BinarySerialization" />
-    <Folder Include="Digram\Command" />
     <Folder Include="Digram\GameOne\BinarySerialization" />
     <Folder Include="Digram\GameOne\Command" />
-    <Folder Include="Digram\GameOne\Command\Scenario" />
     <Folder Include="Digram\GameOne\Data" />
     <Folder Include="Digram\GameOne\Gameinfo" />
     <Folder Include="Digram\GameOne\Main" />
@@ -157,8 +289,9 @@
     <Folder Include="Digram\Main" />
     <Folder Include="Digram\Message" />
     <Folder Include="Digram\Network" />
-    <Folder Include="Digram\Useer" />
+    <Folder Include="Digram\User" />
     <Folder Include="Digram\SystemBase" />
+    <Folder Include="Digram\Command" />
     <Folder Include="ModelDefinition\" />
     <Content Include="CodeMapSolution.dgml">
       <SubType>Content</SubType>
