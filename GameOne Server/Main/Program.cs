@@ -18,8 +18,6 @@ namespace SimpleTeam.GameOne.Main
     {
         static void Main(string[] args)
         {
-            //hjghj
-
             Server server = new Server();
             server.Start();
         }
