@@ -22,19 +22,19 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="Diagram\Solution.classdiagram">
+    <Content Include="Digram\Solution.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Diagram\Solution.classdiagram.layout">
+    <Content Include="Digram\Solution.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Diagram\Solution.classdiagram</DependentUpon>
+      <DependentUpon>Digram\Solution.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Diagram\UMLClassDiagram1.classdiagram">
+    <Content Include="Digram\UMLClassDiagram1.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Diagram\UMLClassDiagram1.classdiagram.layout">
+    <Content Include="Digram\UMLClassDiagram1.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Diagram\UMLClassDiagram1.classdiagram</DependentUpon>
+      <DependentUpon>Digram\UMLClassDiagram1.classdiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Package10_0521.uml">
       <SubType>Content</SubType>
@@ -138,6 +138,27 @@
     <Content Include="ModelDefinition\Package_0521.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Digram\BinarySerialization\DotNet\" />
+    <Folder Include="Digram\GameOne" />
+    <Folder Include="Digram\BinarySerialization" />
+    <Folder Include="Digram\Command" />
+    <Folder Include="Digram\GameOne\BinarySerialization" />
+    <Folder Include="Digram\GameOne\Command" />
+    <Folder Include="Digram\GameOne\Command\Scenario" />
+    <Folder Include="Digram\GameOne\Data" />
+    <Folder Include="Digram\GameOne\Gameinfo" />
+    <Folder Include="Digram\GameOne\Main" />
+    <Folder Include="Digram\GameOne\Message" />
+    <Folder Include="Digram\GameOne\Message\Manager" />
+    <Folder Include="Digram\GameOne\Network" />
+    <Folder Include="Digram\GameOne\SystemBase" />
+    <Folder Include="Digram\GameOne\Scene" />
+    <Folder Include="Digram\GameOne\Properties" />
+    <Folder Include="Digram\Main" />
+    <Folder Include="Digram\Message" />
+    <Folder Include="Digram\Network" />
+    <Folder Include="Digram\Useer" />
+    <Folder Include="Digram\SystemBase" />
     <Folder Include="ModelDefinition\" />
     <Content Include="CodeMapSolution.dgml">
       <SubType>Content</SubType>
@@ -145,6 +166,6 @@
     <Content Include="ModelDefinition\UML GameOne.uml">
       <SubType>Content</SubType>
     </Content>
-    <Folder Include="Diagram" />
+    <Folder Include="Digram" />
   </ItemGroup>
 </Project>
