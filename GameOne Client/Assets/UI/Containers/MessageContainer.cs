@@ -1,6 +1,6 @@
-﻿
+﻿using SimpleTeam.Message;
 
-namespace SimpleTeam.Message
+namespace SimpleTeam.GameOne.Message
 {
     public class MessageContainer : IMessageContainer
     {

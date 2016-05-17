@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SimpleTeam.Properties {
+namespace SimpleTeam.GameOne.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -1,10 +1,10 @@
-﻿using SimpleTeam.Main;
-using SimpleTeam.GameOne.Command;
+﻿using SimpleTeam.Command;
+using SimpleTeam.Main;
+using SimpleTeam.Command.Scenario;
 using System;
 
-namespace SimpleTeam.Command
+namespace SimpleTeam.GameOne.Command
 {
-    using Scenario;
     using TypeID = Byte;
     public class ParameterMain : IParamaterMain
     {

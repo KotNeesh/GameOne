@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
-using SimpleTeam.Network;
+using SimpleTeam.GameOne.Network;
 using SimpleTeam.GameOne.Scene;
 using SimpleTeam.GameOne.Message.Manager;
 using SimpleTeam.Command.Scenario;
 using SimpleTeam.Command;
 using SimpleTeam.GameOne.Command;
+using SimpleTeam.Main;
 
-namespace SimpleTeam.Main
+namespace SimpleTeam.GameOne.Main
 {
     public class Client : MonoBehaviour, IMain
     {

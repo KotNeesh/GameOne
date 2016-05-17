@@ -1,5 +1,6 @@
-﻿
-namespace SimpleTeam.Message
+﻿using SimpleTeam.Message;
+
+namespace SimpleTeam.GameOne.Message
 {
     public interface IMessageContainer
     {

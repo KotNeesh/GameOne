@@ -1,7 +1,7 @@
 ﻿using System;
 using SimpleTeam.Command;
 using SimpleTeam.User;
-using SimpleTeam.Data;
+using SimpleTeam.GameOne.Data;
 using SimpleTeam.GameOne.Message;
 using SimpleTeam.Command.Scenario;
 using SimpleTeam.GameOne.Command;

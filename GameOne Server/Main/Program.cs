@@ -5,7 +5,7 @@ using SimpleTeam.Message;
 using SimpleTeam.Network;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace SimpleTeam.Main
+namespace SimpleTeam.GameOne.Main
 {
     using TypeID = Byte;
 

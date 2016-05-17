@@ -3,7 +3,7 @@ using System.Data.SqlClient;
 using System.Data;
 using SimpleTeam.User;
 
-namespace SimpleTeam.Data
+namespace SimpleTeam.GameOne.Data
 {
     /**
     <summary> 

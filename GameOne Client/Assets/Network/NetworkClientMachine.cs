@@ -8,8 +8,9 @@ using SimpleTeam.Message;
 using SimpleTeam.GameOne.Message.Manager;
 using SimpleTeam.BinarySerialization;
 using SimpleTeam.BinarySerialization.DotNet;
+using SimpleTeam.Network;
 
-namespace SimpleTeam.Network
+namespace SimpleTeam.GameOne.Network
 {
     /**
     <summary> 

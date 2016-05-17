@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace SimpleTeam.SystemBase
+namespace SimpleTeam.GameOne.SystemBase
 {
     public class ConsoleCtrl : IDisposable
     {
