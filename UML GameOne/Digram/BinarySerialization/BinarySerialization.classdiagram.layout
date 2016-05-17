@@ -1,1 +1,26 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BinarySerialization">
+  <logicalClassDesignerModelMoniker Id="eba75d6d-3ea5-4ee7-bc91-8b3d28b5198b" />
+  <nestedChildShapes>
+    <enumerationShape Id="19aff738-1037-4e39-bb57-41e4ef82142f" absoluteBounds="4, 1, 1.5, 1.6799565516908963" hideQualifiedName="false" increaseHeight="0.18800345897674564" customColor="161, 150, 103">
+      <enumerationMoniker Id="aff56f7a-ae90-4c0c-bc3d-29b53ead864a" LastKnownName="UnpackerState" />
+      <nestedChildShapes>
+        <LiteralElementListCompartment Id="5555d6f8-5bd3-49ac-84a1-ea1effd10aef" absoluteBounds="4.0150000000000006, 1.5780034589767458, 1.4700000000000002, 1.0019530927141505" name="LiteralsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </enumerationShape>
+    <interfaceShape Id="8872a392-ab73-4576-9898-cb6f990b6a47" absoluteBounds="2.25, 1, 1.5, 1.2505034391085306" hideQualifiedName="false" increaseHeight="0.18800345897674564" customColor="207, 223, 191">
+      <interfaceMoniker Id="96848d56-5569-4a35-8207-8d3b4a922968" LastKnownName="IPacker" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="b8f32e27-5b28-4591-a065-5902d363a845" absoluteBounds="2.2649999999999997, 1.5780034589767458, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="7b0a4b25-75a2-4dc1-a099-54e460b10c74" absoluteBounds="2.2649999999999997, 1.789175326526165, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <interfaceShape Id="58eaf9ce-d366-407a-b9cf-93f5f80f89d8" absoluteBounds="0.5, 1, 1.5, 1.2505034391085306" hideQualifiedName="false" increaseHeight="0.18800345897674564" customColor="207, 223, 191">
+      <interfaceMoniker Id="8b9df4aa-d3e7-49fc-b4d5-4f1381894959" LastKnownName="IUnpacker" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0db02ab7-ee04-4e07-b873-3a1d4b174f2a" absoluteBounds="0.51499999999999968, 1.5780034589767458, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="60d8308a-d061-4d44-86c0-a1590190e394" absoluteBounds="0.51499999999999968, 1.789175326526165, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
