@@ -11,7 +11,7 @@ namespace SimpleTeam.GameOne.Command
     Реестр всех типов сообщений.
     </summary>
     */
-    public enum HelperParameterID : TypeID
+    public enum HelperParameterID : byte//TypeID
     {
         None,
         Main,

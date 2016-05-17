@@ -15,7 +15,7 @@ namespace SimpleTeam.GameOne.Message
                 return (TypeID)HelperMessageID.Account;
             }
         }
-        public enum StateType : Byte
+        public enum StateType : byte//Byte
         {
             SignUp = 0,
             SignIn = 1,

@@ -4,7 +4,7 @@ using SimpleTeam.Network;
 
 namespace SimpleTeam.BinarySerialization
 {
-    public enum UnpackerState : Byte
+    public enum UnpackerState : byte
     {
         Ok = 0,
         NotReady = 1,

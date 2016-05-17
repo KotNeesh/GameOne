@@ -12,8 +12,8 @@ namespace SimpleTeam.User
     public class UserNetwork : IUserNetwork
     {
         public TcpClient Socket { get; set; }
-        public Queue<Packet> PacketsSend { get; }
-        public Packet PacketReceive { get; }
+        public Queue<Packet> PacketsSend { get; set; }
+        public Packet PacketReceive { get; set; }
 
         public UserNetwork(TcpClient client = null)
         {

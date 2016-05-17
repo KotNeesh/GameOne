@@ -9,7 +9,7 @@ namespace SimpleTeam.GameOne.Message
     Реестр всех типов сообщений.
     </summary>
     */
-    public enum HelperMessageID : TypeID
+    public enum HelperMessageID : byte//TypeID
     {
         Account,
         Chat,
